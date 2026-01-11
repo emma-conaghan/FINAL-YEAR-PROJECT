@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VibeCode Benchmark — Report</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <div class="title">VibeCode Benchmark <span class="pill">PoC</span></div>
+        <div class="subtitle">Lighthouse-inspired report for Semgrep results</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <label class="file">
+        <span>Load Semgrep JSON</span>
+        <span class="pill" id="fileName">none</span>
+        <input id="fileInput" type="file" accept=".json,application/json" />
+      </label>
+      <button class="btn" id="btnDemo">Demo</button>
+      <button class="btn" id="btnExport">Export</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <div class="card">
+        <div class="card-hd">
+          <h2>Summary</h2>
+          <span class="pill" id="stamp">—</span>
+        </div>
+
+        <div class="card-bd summary">
+          <div class="score-block">
+            <div class="ring ring-lg" id="ringOverall" style="--pct: 84; --ringColor: var(--good);">
+              <div class="ring-inner">
+                <div class="ring-num" id="overallScore">84</div>
+                <div class="ring-label">Overall</div>
+              </div>
+            </div>
+            <div class="small-note">PoC scoring (heuristic)</div>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <div class="metric-left">
+                <div class="metric-name">Security</div>
+                <div class="metric-value" id="secScore">—</div>
+              </div>
+              <span class="badge" id="secGrade">—</span>
+            </div>
+
+            <div class="metric">
+              <div class="metric-left">
+                <div class="metric-name">Maintainability</div>
+                <div class="metric-value" id="maintScore">PoC</div>
+              </div>
+              <span class="badge">PoC</span>
+            </div>
+
+            <div class="metric">
+              <div class="metric-left">
+                <div class="metric-name">Reliability</div>
+                <div class="metric-value" id="relScore">PoC</div>
+              </div>
+              <span class="badge">PoC</span>
+            </div>
+
+            <div class="metric">
+              <div class="metric-left">
+                <div class="metric-name">Style</div>
+                <div class="metric-value" id="styleScore">PoC</div>
+              </div>
+              <span class="badge">PoC</span>
+            </div>
+          </div>
+
+          <div class="meta">
+            <div class="kv">
+              <div class="k">Target</div>
+              <div class="v" id="target">—</div>
+            </div>
+            <div class="kv">
+              <div class="k">Tool</div>
+              <div class="v">Semgrep (auto rules)</div>
+            </div>
+            <div class="kv">
+              <div class="k">Findings</div>
+              <div class="v" id="counts">—</div>
+            </div>
+            <div class="kv">
+              <div class="k">Run ID</div>
+              <div class="v" id="runId">poc-0000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-hd">
+          <h2>Category scores</h2>
+          <span class="pill">Lighthouse-style</span>
+        </div>
+
+        <div class="card-bd rings">
+          <div class="ring ring-sm" id="ringSec" style="--pct: 72; --ringColor: var(--bad);">
+            <div class="ring-inner">
+              <div class="ring-num" id="ringSecNum">72</div>
+              <div class="ring-label">Security</div>
+            </div>
+          </div>
+
+          <div class="ring ring-sm" id="ringMaint" style="--pct: 80; --ringColor: var(--warn);">
+            <div class="ring-inner">
+              <div class="ring-num" id="ringMaintNum">80</div>
+              <div class="ring-label">Maintain</div>
+            </div>
+          </div>
+
+          <div class="ring ring-sm" id="ringRel" style="--pct: 86; --ringColor: var(--info);">
+            <div class="ring-inner">
+              <div class="ring-num" id="ringRelNum">86</div>
+              <div class="ring-label">Reliability</div>
+            </div>
+          </div>
+
+          <div class="ring ring-sm" id="ringStyle" style="--pct: 92; --ringColor: var(--good);">
+            <div class="ring-inner">
+              <div class="ring-num" id="ringStyleNum">92</div>
+              <div class="ring-label">Style</div>
+            </div>
+          </div>
+
+          <p class="explain">
+            For this proof-of-concept, the Security score is computed directly from Semgrep severities.
+            Other categories are placeholders to show how additional tools/metrics would be integrated next semester.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-hd">
+        <h2>Audits</h2>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Search rule / message / path…" />
+          <select id="sevFilter">
+            <option value="all">All severities</option>
+            <option value="HIGH">HIGH</option>
+            <option value="MEDIUM">MEDIUM</option>
+            <option value="LOW">LOW</option>
+            <option value="INFO">INFO</option>
+            <option value="UNKNOWN">UNKNOWN</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card-bd">
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:130px">Severity</th>
+                <th style="width:280px">Rule</th>
+                <th>Message</th>
+                <th style="width:260px">Location</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="empty" id="empty">No findings match your filters.</div>
+
+        <div class="footer">
+          Tip: run Semgrep and save JSON, then load it here:
+          <span class="pill">results/semgrep_*.json</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

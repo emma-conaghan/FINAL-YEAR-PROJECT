@@ -1,0 +1,44 @@
+                   
+                   
+┌─────────────────┐
+│ 6 Code Findings │
+└─────────────────┘
+                                                 
+  [36m[22m[24m  sample/workflow_engine_vuln.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          243┆ data = pickle.load(f)  # VULN
+            ⋮┆----------------------------------------
+          257┆ pickle.dump(self._kv, f)  # VULN
+   
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          348┆ mod = importlib.import_module(mod_name)  # VULN: attacker-controlled import
+   
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          356┆ val = eval(spec.python_expr, {"ctx": ctx, "os": os, "time": time, "random": random})  #
+               VULN                                                                                   
+   
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          466┆ ctx.kv["user_blob"] = pickle.dumps({"hello": "world"})  # sink for later
+            ⋮┆----------------------------------------
+          475┆ obj = pickle.loads(blob)  # VULN
+
