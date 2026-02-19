@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.scannerwork/
+.DS_Store
+.vscode/
+command.txt
+sonar-project.properties
