@@ -1,1 +1,1 @@
-Create a simple, secure Python file.
+Create a simple, unsecure Python file.

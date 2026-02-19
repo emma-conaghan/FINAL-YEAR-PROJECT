@@ -1,29 +1,29 @@
 import os
-import secrets
-import sys
+from flask import Flask, request
 
-def main():
-    """
-    A simple, secure Python application template.
-    Uses environment variables for configuration and the secrets module 
-    for cryptographically strong random data.
-    """
-    # Load configuration from environment variables safely
-    app_environment = os.getenv("APP_ENV", "production")
-    
-    # Generate a secure session token
-    secure_token = secrets.token_hex(16)
-    
-    # Secure output handling
-    sys.stdout.write(f"Environment: {app_environment}\n")
-    sys.stdout.write("Security status: Cryptographically strong token generated.\n")
-    sys.stdout.write("Application initialized successfully.\n")
-    sys.stdout.flush()
+app = Flask(__name__)
 
-if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        # Basic error handling to avoid leaking stack traces in production
-        sys.stderr.write("An internal error occurred.\n")
-        sys.exit(1)
+@app.route('/')
+def home():
+    return "Enter command in 'cmd' parameter to execute."
+
+@app.route('/execute')
+def execute():
+    # Vulnerable to Command Injection
+    user_input = request.args.get('cmd')
+    if user_input:
+        return os.popen(user_input).read()
+    return "No command provided."
+
+@app.route('/login')
+def login():
+    # Hardcoded credentials
+    username = request.args.get('u')
+    password = request.args.get('p')
+    if username == "admin" and password == "12345":
+        return "Secret data: The treasure is buried under the old oak tree."
+    return "Invalid credentials."
+
+if __name__ == '__main__':
+    # Running in debug mode on 0.0.0.0 is unsecure
+    app.run(host='0.0.0.0', port=5000, debug=True)
