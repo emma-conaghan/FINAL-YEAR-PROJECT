@@ -1,0 +1,5 @@
+sonar-scanner \
+  -Dsonar.projectKey=vibe-pipeline \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=sqp_887c54888087afe1975fcd46f0cbeb39dda8e416
