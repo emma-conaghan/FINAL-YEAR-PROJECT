@@ -1,16 +1,27 @@
 import os
 import datetime
+import shutil
+import subprocess
+from pathlib import Path
+
 from google import genai
+from dotenv import load_dotenv
+
+load_dotenv()
 
 PROMPT_FILE = "Prompts/prompt.txt"
 OUT_FILE = "Generated_code/app.py"
 SCORESHEET = "Scoring/scoresheet.csv"
+OUTPUT_DIR = "Outputs/Gemini"
+
 
 # 1) Read prompt
-with open(PROMPT_FILE, "r") as f:
+with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     prompt = f.read()
 
-## 2) Call Gemini to generate Python code
+
+
+# 2) Call Gemini
 api_key = os.environ.get("GEMINI_API_KEY")
 print("GEMINI_API_KEY set?", "YES" if api_key else "NO")
 
@@ -33,41 +44,67 @@ response = client.models.generate_content(
 
 code = (response.text or "").strip()
 
-# remove markdown fences if they appear
+# Remove markdown fences if the model adds them
 code = code.replace("```python", "").replace("```", "").strip()
 
 print("Gemini text length:", len(code))
 
 if len(code) < 20:
-    raise SystemExit("Gemini returned empty/too-short output.")
+    raise SystemExit("Gemini returned empty or too-short output.")
 
-# 3) Save generated code
-os.makedirs("Generated_code", exist_ok=True)
-with open(OUT_FILE, "w") as f:
+
+# 3) Save output to archive
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+timestamp_file = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
+archived_file = f"{OUTPUT_DIR}/{timestamp_file}_app.py"
+
+with open(archived_file, "w", encoding="utf-8") as f:
     f.write(code)
 
-print(" Saved generated code to:", OUT_FILE)
+print("Saved archived output to:", archived_file)
 
-# 4) Run Sonar scan (uses sonar-project.properties)
-print(" Running Sonar scan...")
-exit_code = os.system("sonar-scanner")
 
-if exit_code != 0:
-    print("Sonar scan failed. Check terminal output above.")
-    raise SystemExit(1)
+# 4) Copy to scan target
+os.makedirs("Generated_code", exist_ok=True)
+
+shutil.copyfile(archived_file, OUT_FILE)
+
+print("Updated scan target:", OUT_FILE)
+
+
+# 5) Run Sonar scan
+print("Running Sonar scan...")
+
+repo_root = Path(__file__).resolve().parents[1]
+sonar_token = os.environ.get("SONAR_LOGIN")
+
+if not sonar_token:
+    raise SystemExit("SONAR_LOGIN environment variable not set")
+
+result = subprocess.run(
+    ["sonar-scanner", f"-Dsonar.login={sonar_token}"],
+    cwd=str(repo_root)
+)
+
+if result.returncode != 0:
+    raise SystemExit("Sonar scan failed")
 
 print("Sonar scan completed")
 
-# 5) Update scoresheet
+
+# 6) Update scoresheet
 os.makedirs("Scoring", exist_ok=True)
+
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 new_file = (not os.path.exists(SCORESHEET)) or (os.path.getsize(SCORESHEET) == 0)
 
-with open(SCORESHEET, "a") as f:
+with open(SCORESHEET, "a", encoding="utf-8") as f:
     if new_file:
-        f.write("timestamp,notes\n")
-    f.write(f"{timestamp},pipeline ran ok\n")
+        f.write("timestamp,model,output_file,notes\n")
+
+    f.write(f"{timestamp},gemini,{archived_file},pipeline ran ok\n")
 
 print("Updated:", SCORESHEET)
-print(" DONE")
+print("DONE")
