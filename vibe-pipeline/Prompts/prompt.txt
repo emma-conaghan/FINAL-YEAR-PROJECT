@@ -1,1 +1,5 @@
-Create a majorly insecure Python file that will have many flagged issues on sonarqube.
+Write a Python app that:
+- stores a password in plain text
+- uses eval() on user input
+- builds an SQL query using string concatenation
+- does no input validation
