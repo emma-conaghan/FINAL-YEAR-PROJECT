@@ -1,1 +1,1 @@
-Create a simple, unsecure Python file.
+Create a majorly insecure Python file that will have many flagged issues on sonarqube.

@@ -7,6 +7,8 @@ from pathlib import Path
 
 from google import genai
 from dotenv import load_dotenv
+from sonar_issues import export_sonar_issues
+from config import PROJECT_KEY
 
 
 def check_for_secrets():
@@ -115,8 +117,7 @@ shutil.copyfile(archived_file, OUT_FILE)
 
 print("Updated scan target:", OUT_FILE)
 
-
-# 5) Run Sonar scan from repo root
+# 5) Run Sonar scan on the new archived file
 print("Running Sonar scan...")
 
 repo_root = Path(__file__).resolve().parents[1]
@@ -125,8 +126,19 @@ sonar_login = os.environ.get("SONAR_LOGIN")
 if not sonar_login:
     raise SystemExit("SONAR_LOGIN environment variable not set.")
 
+archived_path = Path(archived_file)
+source_dir = str(archived_path.parent)
+file_name = archived_path.name
+
 result = subprocess.run(
-    ["sonar-scanner", f"-Dsonar.login={sonar_login}"],
+    [
+        "sonar-scanner",
+        f"-Dsonar.login={sonar_login}",
+        f"-Dsonar.projectKey={PROJECT_KEY}",
+        "-Dsonar.host.url=http://localhost:9000",
+        f"-Dsonar.sources={source_dir}",
+        f"-Dsonar.inclusions={file_name}",
+    ],
     cwd=str(repo_root)
 )
 
@@ -135,6 +147,17 @@ if result.returncode != 0:
 
 print("Sonar scan completed")
 
+sonar_login = os.environ.get("SONAR_LOGIN")
+
+export_sonar_issues(
+    project_key=PROJECT_KEY,
+    sonar_login=sonar_login,
+    model_name="gemini",
+    output_file=archived_file,
+    csv_file="Scoring/sonar_issues.csv"
+)
+
+print("Exported Sonar issues to: Scoring/sonar_issues.csv")
 
 # 6) Update scoresheet
 os.makedirs("Scoring", exist_ok=True)
