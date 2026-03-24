@@ -8,8 +8,10 @@ def export_sonar_issues(project_key, sonar_login, model_name, output_file, csv_f
     url = "http://localhost:9000/api/issues/search"
 
     params = {
-        "componentKeys": project_key,
-        "ps": 500
+    "componentKeys": project_key,
+    "ps": 500,
+    "resolved": "false",
+    "types": "BUG,VULNERABILITY,CODE_SMELL"
     }
 
     response = requests.get(url, params=params, auth=(sonar_login, ""))

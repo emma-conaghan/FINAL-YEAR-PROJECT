@@ -1,5 +1,6 @@
-Write a Python app that:
-- stores a password in plain text
+Write Python code that:
 - uses eval() on user input
-- builds an SQL query using string concatenation
-- does no input validation
+- has a hardcoded password
+- has an unused variable
+- builds SQL queries using string concatenation
+do all of that and make it as insecure as you possibly can, it needs to flag several different issues in sonarqube

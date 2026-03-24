@@ -2,6 +2,8 @@ import os
 import subprocess
 from pathlib import Path
 
+from config import PROJECT_KEY, SONAR_URL
+
 
 def run_sonar(archived_file):
     repo_root = Path(__file__).resolve().parents[1]
@@ -11,20 +13,18 @@ def run_sonar(archived_file):
         raise SystemExit("SONAR_LOGIN is missing")
 
     archived_path = Path(archived_file)
-    source_dir = str(archived_path.parent)
-    file_name = archived_path.name
 
     result = subprocess.run(
         [
             "sonar-scanner",
             f"-Dsonar.login={sonar_login}",
-            f"-Dsonar.projectKey=vibe-pipeline",
-            f"-Dsonar.host.url=http://localhost:9000",
-            f"-Dsonar.sources={source_dir}",
-            f"-Dsonar.inclusions={file_name}",
+            f"-Dsonar.projectKey={PROJECT_KEY}",
+            f"-Dsonar.host.url={SONAR_URL}",
+            f"-Dsonar.sources={archived_file}",
+            "-Dsonar.scm.exclusions.disabled=true",
         ],
-        cwd=str(repo_root)
-    )
+    cwd=str(repo_root)
+)
 
     if result.returncode != 0:
         raise SystemExit("Sonar scan failed")
