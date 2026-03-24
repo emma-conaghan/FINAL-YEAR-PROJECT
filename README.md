@@ -77,10 +77,12 @@ Scoring/sonar_issues.csv
 Each row represents a detected issue.
 
 Example Output
+
 timestamp,model,output_file,issue_type,severity,rule,message,file,line,status
 2026-03-23 12:53:31,gemini,Outputs/Gemini/...,CODE_SMELL,MINOR,python:S1481,Remove unused variable,...
 
 Setup
+
 1. Install dependencies
 
 pip install -r requirements.txt
@@ -110,19 +112,23 @@ These files are used as evaluation inputs, benchmarking artefacts, and test case
 DO NOT EXECUTE THESE FILES ON YOUR MACHINE!
 
 Limitations
+
 SonarQube provides limited security detection for Python
 Some vulnerabilities may not be flagged
 Results depend on prompt design and model behaviour
 
 Future Work
+
 Integration of additional models (ChatGPT, Claude)
 Addition of Semgrep for improved security detection
 Aggregated metrics (issue counts per run)
 Comparative evaluation across models
 
 Author
+
 Final Year Computer Science Project
 ATU Donegal
 
 Licence
+
 This project is for educational and research purposes only.
