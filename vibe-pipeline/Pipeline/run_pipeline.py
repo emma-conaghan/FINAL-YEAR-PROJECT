@@ -1,25 +1,23 @@
 import os
 import re
 import datetime
-import shutil
-import subprocess
 from pathlib import Path
 
 from google import genai
 from dotenv import load_dotenv
 
+from config import PROMPT_FILE, SCORESHEET, OUTPUT_DIR, MODEL_NAME, PROJECT_KEY
+from sonar_runner import run_sonar
+from sonar_issues import export_sonar_issues
+
 
 def check_for_secrets():
-    """
-    Stop the pipeline if a likely API key or token
-    is found in repository files.
-    """
     repo_root = Path(__file__).resolve().parents[1]
 
     patterns = [
-        r"AIza[0-9A-Za-z\-_]{35}",   # Google API key
-        r"sqp_[0-9a-f]{40}",         # Sonar token
-        r"sk-[A-Za-z0-9]{20,}",      # OpenAI-style key
+        r"AIza[0-9A-Za-z\-_]{35}",
+        r"sqp_[0-9a-f]{40}",
+        r"sk-[A-Za-z0-9]{20,}",
     ]
 
     allowed_files = {".py", ".txt", ".csv", ".properties"}
@@ -49,29 +47,21 @@ def check_for_secrets():
 load_dotenv()
 check_for_secrets()
 
-PROMPT_FILE = "Prompts/prompt.txt"
-OUT_FILE = "Generated_code/app.py"
-SCORESHEET = "Scoring/scoresheet.csv"
-OUTPUT_DIR = "Outputs/Gemini"
-MODEL_NAME = "gemini-3-flash-preview"
-
-
 # 1) Read prompt
 with open(PROMPT_FILE, "r", encoding="utf-8") as f:
     prompt = f.read()
-
 
 # 2) Call Gemini
 api_key = os.environ.get("GEMINI_API_KEY")
 print("GEMINI_API_KEY set?", "YES" if api_key else "NO")
 
 if not api_key:
-    raise SystemExit("GEMINI_API_KEY is missing. Put it in .env or export it in terminal.")
+    raise SystemExit("GEMINI_API_KEY is missing.")
 
 client = genai.Client(api_key=api_key)
 
 full_prompt = (
-    "Return ONLY valid Python code for a single file called app.py. "
+    "Return ONLY valid Python code for a single file. "
     "No markdown, no backticks, no explanation.\n\n"
     + prompt
 )
@@ -87,8 +77,6 @@ except Exception as e:
     raise SystemExit(f"Gemini request failed: {e}")
 
 code = (response.text or "").strip()
-
-# Remove markdown fences if they appear
 code = code.replace("```python", "").replace("```", "").strip()
 
 print("Gemini text length:", len(code))
@@ -96,8 +84,7 @@ print("Gemini text length:", len(code))
 if len(code) < 20:
     raise SystemExit("Gemini returned empty or too-short output.")
 
-
-# 3) Save archived output
+# 3) Save archived output only
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 timestamp_file = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
@@ -108,33 +95,23 @@ with open(archived_file, "w", encoding="utf-8") as f:
 
 print("Saved archived output to:", archived_file)
 
-
-# 4) Copy to scan target
-os.makedirs("Generated_code", exist_ok=True)
-shutil.copyfile(archived_file, OUT_FILE)
-
-print("Updated scan target:", OUT_FILE)
-
-
-# 5) Run Sonar scan from repo root
+# 4) Run Sonar directly on archived file
 print("Running Sonar scan...")
-
-repo_root = Path(__file__).resolve().parents[1]
-sonar_login = os.environ.get("SONAR_LOGIN")
-
-if not sonar_login:
-    raise SystemExit("SONAR_LOGIN environment variable not set.")
-
-result = subprocess.run(
-    ["sonar-scanner", f"-Dsonar.login={sonar_login}"],
-    cwd=str(repo_root)
-)
-
-if result.returncode != 0:
-    raise SystemExit("Sonar scan failed")
-
+run_sonar(archived_file)
 print("Sonar scan completed")
 
+# 5) Export Sonar issues
+sonar_login = os.environ.get("SONAR_LOGIN")
+
+export_sonar_issues(
+    project_key=PROJECT_KEY,
+    sonar_login=sonar_login,
+    model_name="gemini",
+    output_file=archived_file,
+    csv_file="Scoring/sonar_issues.csv"
+)
+
+print("Exported Sonar issues to: Scoring/sonar_issues.csv")
 
 # 6) Update scoresheet
 os.makedirs("Scoring", exist_ok=True)

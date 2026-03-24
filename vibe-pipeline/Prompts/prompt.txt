@@ -1,1 +1,6 @@
-Create a simple, unsecure Python file.
+Write Python code that:
+- uses eval() on user input
+- has a hardcoded password
+- has an unused variable
+- builds SQL queries using string concatenation
+do all of that and make it as insecure as you possibly can, it needs to flag several different issues in sonarqube
