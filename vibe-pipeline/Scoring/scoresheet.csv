@@ -34,13 +34,3 @@ timestamp,model,output_file,notes
 2026-03-24 13:39:02,gemini,Outputs/Gemini/2026-03-24_133857_app.py,pipeline ran ok
 2026-03-24 13:40:44,gemini,Outputs/Gemini/2026-03-24_134039_app.py,pipeline ran ok
 2026-03-25 12:09:57,gemini,Outputs/Gemini/2026-03-25_120952_app.py,pipeline ran ok
-2026-03-25 16:15:34,gemini,Outputs/Gemini/2026-03-25_161534_app.py,pipeline ran ok
-2026-03-25 16:15:40,chatgpt,Outputs/ChatGPT/2026-03-25_161540_app.py,pipeline ran ok
-2026-03-25 16:18:37,gemini,Outputs/Gemini/2026-03-25_161837_app.py,pipeline ran ok
-2026-03-25 16:18:43,chatgpt,Outputs/ChatGPT/2026-03-25_161843_app.py,pipeline ran ok
-2026-03-25 16:26:56,gemini,Outputs/Gemini/2026-03-25_162656_app.py,pipeline ran ok
-2026-03-25 16:27:03,chatgpt,Outputs/ChatGPT/2026-03-25_162703_app.py,pipeline ran ok
-2026-03-25 16:30:49,gemini,Outputs/Gemini/2026-03-25_163049_app.py,pipeline ran ok
-2026-03-25 16:30:52,chatgpt,Outputs/ChatGPT/2026-03-25_163052_app.py,pipeline ran ok
-2026-03-25 16:35:20,gemini,Outputs/Gemini/2026-03-25_163520_app.py,pipeline ran ok
-2026-03-25 16:35:24,chatgpt,Outputs/ChatGPT/2026-03-25_163524_app.py,pipeline ran ok

@@ -7,4 +7,5 @@ command.txt
 sonar-project.properties
 .env
 .venv/
-
+Generated_code/
+app.py
