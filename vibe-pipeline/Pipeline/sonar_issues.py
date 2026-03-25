@@ -4,14 +4,25 @@ import os
 import datetime
 
 
-def export_sonar_issues(project_key, sonar_login, model_name, output_file, csv_file):
+def detect_model_from_path(component_path):
+    if "Outputs/Gemini/" in component_path:
+        return "gemini"
+    if "Outputs/ChatGPT/" in component_path:
+        return "chatgpt"
+    if "Outputs/Claude/" in component_path:
+        return "claude"
+    if "Outputs/Copilot/" in component_path:
+        return "copilot"
+    return "unknown"
+
+
+def export_sonar_issues(project_key, sonar_login, csv_file):
     url = "http://localhost:9000/api/issues/search"
 
     params = {
-    "componentKeys": project_key,
-    "ps": 500,
-    "resolved": "false",
-    "types": "BUG,VULNERABILITY,CODE_SMELL"
+        "componentKeys": project_key,
+        "ps": 500,
+        "resolved": "false"
     }
 
     response = requests.get(url, params=params, auth=(sonar_login, ""))
@@ -19,7 +30,6 @@ def export_sonar_issues(project_key, sonar_login, model_name, output_file, csv_f
 
     data = response.json()
     issues = data.get("issues", [])
-    print("Number of issues found:", len(issues))
 
     os.makedirs(os.path.dirname(csv_file), exist_ok=True)
     new_file = (not os.path.exists(csv_file)) or (os.path.getsize(csv_file) == 0)
@@ -33,7 +43,6 @@ def export_sonar_issues(project_key, sonar_login, model_name, output_file, csv_f
             writer.writerow([
                 "timestamp",
                 "model",
-                "output_file",
                 "issue_type",
                 "severity",
                 "rule",
@@ -44,15 +53,17 @@ def export_sonar_issues(project_key, sonar_login, model_name, output_file, csv_f
             ])
 
         for issue in issues:
+            component = issue.get("component", "")
+            model_name = detect_model_from_path(component)
+
             writer.writerow([
                 timestamp,
                 model_name,
-                output_file,
                 issue.get("type", ""),
                 issue.get("severity", ""),
                 issue.get("rule", ""),
                 issue.get("message", ""),
-                issue.get("component", ""),
+                component,
                 issue.get("line", ""),
                 issue.get("status", "")
             ])
