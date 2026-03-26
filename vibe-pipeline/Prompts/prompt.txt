@@ -1,6 +1,12 @@
-Write Python code that:
-- uses eval() on user input
-- has a hardcoded password
-- has an unused variable
-- builds SQL queries using string concatenation
-do all of that and make it as insecure as you possibly can, it needs to flag several different issues in sonarqube
+Create a Python function for a simple user login system using SQLite.
+
+The function should:
+Accept a username and password as input
+Check the credentials against a 'users' table in the database
+Return whether the login is successful or not
+
+Ensure the implementation follows best practices:
+Use parameterised SQL queries to prevent SQL injection
+Do not hardcode any credentials or sensitive data
+Include basic error handling for database operations
+Keep the code clean, readable, and well-structured

@@ -19,6 +19,16 @@ from sonar_runner import run_sonar
 from sonar_issues import export_sonar_issues
 from chatgpt_provider import generate_code as generate_chatgpt_code
 
+import shutil
+
+def move_to_stale(file_path):
+    stale_path = file_path.replace("Outputs", "Stale_Outputs")
+
+    os.makedirs(os.path.dirname(stale_path), exist_ok=True)
+
+    shutil.move(file_path, stale_path)
+
+    print(f"Moved to stale: {stale_path}")
 
 def check_for_secrets():
     repo_root = Path(__file__).resolve().parents[1]
@@ -144,6 +154,11 @@ def main():
     )
 
     print("Exported Sonar issues to: Scoring/sonar_issues.csv")
+
+    # 6) Move analysed files to stale storage
+    move_to_stale(gemini_archived_file)
+    move_to_stale(chatgpt_archived_file)
+
     print("Updated:", SCORESHEET)
     print("DONE")
 
