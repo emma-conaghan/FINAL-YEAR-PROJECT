@@ -10,16 +10,10 @@ def generate_code(prompt, model_name="gpt-4.1-mini"):
 
     client = OpenAI(api_key=api_key)
 
-    full_prompt = (
-        "Return ONLY valid Python code for a single file called app.py. "
-        "No markdown, no backticks, no explanation.\n\n"
-        + prompt
-    )
-
     try:
         response = client.responses.create(
             model=model_name,
-            input=full_prompt
+            input=prompt
         )
     except Exception as e:
         raise SystemExit(f"ChatGPT request failed: {e}")

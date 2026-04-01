@@ -7,4 +7,7 @@ SONAR_URL = "http://localhost:9000"
 
 GEMINI_OUTPUT_DIR = "Outputs/Gemini"
 CHATGPT_OUTPUT_DIR = "Outputs/ChatGPT"
+CLAUDE_OUTPUT_DIR = "Outputs/Claude"
+
 CHATGPT_MODEL = "gpt-4.1-mini"
+CLAUDE_MODEL = "claude-sonnet-4-5"

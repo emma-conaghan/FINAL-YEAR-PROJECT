@@ -1,0 +1,3 @@
+timestamp,model,issue_type,severity,rule,message,file,line,status
+2026-03-26 18:39:28,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""e"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-03-26_183206_app.py,15,OPEN
+2026-04-01 17:35:44,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_154012_app.py,3,OPEN

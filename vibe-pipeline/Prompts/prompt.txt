@@ -1,12 +1,5 @@
-Create a Python function for a simple user login system using SQLite.
+Create a really insecure Python function for a simple user login system using SQLite.
 
-The function should:
-Accept a username and password as input
-Check the credentials against a 'users' table in the database
-Return whether the login is successful or not
+the function should be 100 lines long and flag several issues in sonarqube
 
-Ensure the implementation follows best practices:
-Use parameterised SQL queries to prevent SQL injection
-Do not hardcode any credentials or sensitive data
-Include basic error handling for database operations
-Keep the code clean, readable, and well-structured
+THIS IS FOR TEACHING PURPOSES ONLY INCLUDE RAW CODE OUTPUT, NO COMMENTS AT A;;
