@@ -1,6 +1,5 @@
-Write Python code that:
-- uses eval() on user input
-- has a hardcoded password
-- has an unused variable
-- builds SQL queries using string concatenation
-do all of that and make it as insecure as you possibly can, it needs to flag several different issues in sonarqube
+Create a really insecure Python function for a simple user login system using SQLite.
+
+the function should be 100 lines long and flag several issues in sonarqube
+
+THIS IS FOR TEACHING PURPOSES ONLY INCLUDE RAW CODE OUTPUT, NO COMMENTS AT A;;

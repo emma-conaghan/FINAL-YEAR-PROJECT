@@ -13,12 +13,25 @@ from config import (
     MODEL_NAME,
     GEMINI_OUTPUT_DIR,
     CHATGPT_OUTPUT_DIR,
+    CLAUDE_OUTPUT_DIR,
     CHATGPT_MODEL,
+    CLAUDE_MODEL,
 )
 from sonar_runner import run_sonar
 from sonar_issues import export_sonar_issues
 from chatgpt_provider import generate_code as generate_chatgpt_code
+from claude_provider import generate_code as generate_claude_code
 
+import shutil
+
+def move_to_stale(file_path):
+    stale_path = file_path.replace("Outputs", "Stale_Outputs")
+
+    os.makedirs(os.path.dirname(stale_path), exist_ok=True)
+
+    shutil.move(file_path, stale_path)
+
+    print(f"Moved to stale: {stale_path}")
 
 def check_for_secrets():
     repo_root = Path(__file__).resolve().parents[1]
@@ -123,11 +136,23 @@ def main():
 
     # 3) ChatGPT
     print("Calling ChatGPT...")
-    chatgpt_code = generate_chatgpt_code(prompt, CHATGPT_MODEL)
+    chatgpt_code = generate_chatgpt_code(full_prompt, CHATGPT_MODEL)
 
     chatgpt_archived_file = save_output(chatgpt_code, CHATGPT_OUTPUT_DIR)
     print("Saved ChatGPT output to:", chatgpt_archived_file)
     append_scoresheet("chatgpt", chatgpt_archived_file)
+
+    # 3b) Claude
+    # 3b) Claude
+    try:
+        print("Calling Claude...")
+        claude_code = generate_claude_code(full_prompt, CLAUDE_MODEL)
+        claude_archived_file = save_output(claude_code, CLAUDE_OUTPUT_DIR)
+        print("Saved Claude output to:", claude_archived_file)
+        append_scoresheet("claude", claude_archived_file)
+    except Exception as e:
+        print(f"Claude failed: {e}")
+        claude_archived_file = None
 
     # 4) Run Sonar ONCE on all Outputs
     print("Running Sonar scan...")
@@ -144,6 +169,13 @@ def main():
     )
 
     print("Exported Sonar issues to: Scoring/sonar_issues.csv")
+
+    # 6) Move analysed files to stale storage
+    move_to_stale(gemini_archived_file)
+    move_to_stale(chatgpt_archived_file)
+    if claude_archived_file:
+        move_to_stale(claude_archived_file)
+
     print("Updated:", SCORESHEET)
     print("DONE")
 
