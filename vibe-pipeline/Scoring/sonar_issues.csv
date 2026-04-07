@@ -1,3 +1,138 @@
 timestamp,model,issue_type,severity,rule,message,file,line,status
 2026-03-26 18:39:28,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""e"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-03-26_183206_app.py,15,OPEN
 2026-04-01 17:35:44,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_154012_app.py,3,OPEN
+2026-04-01 18:58:21,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_173526_app.py,4,OPEN
+2026-04-01 18:58:21,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Specify an exception class to catch or reraise the exception,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_173526_app.py,104,OPEN
+2026-04-01 18:58:21,chatgpt,CODE_SMELL,CRITICAL,python:S1192,"Define a constant instead of duplicating this literal ""temp.txt"" 3 times.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_173526_app.py,108,OPEN
+2026-04-01 18:58:21,chatgpt,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_173526_app.py,108,OPEN
+2026-04-01 18:58:21,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""val"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-01_173526_app.py,127,OPEN
+2026-04-01 18:58:21,claude,CODE_SMELL,CRITICAL,python:S1192,Define a constant instead of duplicating this literal 'users.db' 6 times.,vibe-pipeline-multi:Outputs/Claude/2026-04-01_173536_app.py,9,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""user_id"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,36,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,51,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""prefs"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,60,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_1"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,77,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_2"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,78,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_3"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,79,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_4"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,80,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_5"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,81,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_6"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,82,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_7"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,83,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_8"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,84,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_9"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,85,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_10"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,86,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_11"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,87,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_12"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,88,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_13"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,89,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_14"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,90,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_15"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,91,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_16"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,92,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_17"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,93,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_18"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,94,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_19"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,95,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_20"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,96,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_21"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,97,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_22"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,98,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_23"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,99,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_24"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,100,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_25"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,101,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_26"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,102,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_27"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,103,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_28"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,104,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_29"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,105,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_30"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,106,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_31"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,107,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_32"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,108,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_33"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,109,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_34"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,110,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_35"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,111,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_36"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,112,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_37"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,113,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_38"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,114,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_39"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,115,OPEN
+2026-04-01 18:58:21,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_40"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-01_173513_app.py,116,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.,vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_185753_app.py,4,OPEN
+2026-04-01 19:18:29,claude,CODE_SMELL,CRITICAL,python:S1192,Define a constant instead of duplicating this literal 'users.db' 8 times.,vibe-pipeline-multi:Stale_Outputs/Claude/2026-04-01_185805_app.py,9,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""e"".",vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-03-26_183206_app.py,15,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.,vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_154012_app.py,3,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.,vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_173526_app.py,4,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Specify an exception class to catch or reraise the exception,vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_173526_app.py,104,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,CRITICAL,python:S1192,"Define a constant instead of duplicating this literal ""temp.txt"" 3 times.",vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_173526_app.py,108,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_173526_app.py,108,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""val"".",vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-04-01_173526_app.py,127,OPEN
+2026-04-01 19:18:29,claude,CODE_SMELL,CRITICAL,python:S1192,Define a constant instead of duplicating this literal 'users.db' 6 times.,vibe-pipeline-multi:Stale_Outputs/Claude/2026-04-01_173536_app.py,9,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""user_id"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,36,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,51,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""prefs"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,60,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_1"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,77,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_2"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,78,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_3"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,79,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_4"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,80,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_5"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,81,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_6"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,82,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_7"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,83,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_8"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,84,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_9"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,85,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_10"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,86,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_11"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,87,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_12"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,88,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_13"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,89,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_14"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,90,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_15"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,91,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_16"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,92,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_17"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,93,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_18"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,94,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_19"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,95,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_20"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,96,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_21"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,97,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_22"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,98,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_23"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,99,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_24"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,100,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_25"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,101,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_26"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,102,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_27"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,103,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_28"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,104,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_29"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,105,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_30"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,106,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_31"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,107,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_32"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,108,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_33"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,109,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_34"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,110,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_35"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,111,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_36"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,112,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_37"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,113,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_38"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,114,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_39"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,115,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temp_var_40"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-04-01_173513_app.py,116,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""user"".",vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-03-25_162703_app.py,5,OPEN
+2026-04-01 19:18:29,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""result"".",vibe-pipeline-multi:Stale_Outputs/ChatGPT/2026-03-25_164823_app.py,14,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,CRITICAL,python:S1192,Define a constant instead of duplicating this literal 'database.db' 3 times.,vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-19_231050_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""user"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-23_124803_app.py,27,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""data"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-23_124803_app.py,54,OPEN
+2026-04-01 19:18:29,gemini,VULNERABILITY,CRITICAL,python:S4830,Enable server certificate validation on this SSL/TLS connection.,vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-23_125327_app.py,52,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""cursor"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_100124_app.py,11,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""internal_api_endpoint"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_100240_app.py,11,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""admin_password"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_100416_app.py,6,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_config_flag"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_100416_app.py,9,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_variable"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_101031_app.py,6,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""debug_mode_enabled"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_101829_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_config_value"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_133857_app.py,6,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""database_password"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_140300_app.py,5,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""debug_mode_enabled"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_140300_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""user_session_timeout"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_140343_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""debug_mode_enabled"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-24_140501_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""admin_password"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_120952_app.py,4,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_value"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_120952_app.py,5,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""configuration_timeout_setting"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_155730_app.py,9,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""password"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_161837_app.py,4,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_config_var"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_161837_app.py,5,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""DB_PASSWORD"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_162656_app.py,5,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_config_value"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_162656_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_config_path"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_163049_app.py,10,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,CRITICAL,python:S5754,Specify an exception class to catch or reraise the exception,vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_163049_app.py,34,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""internal_debug_flag"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_164221_app.py,11,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""db_password"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_164821_app.py,5,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_configuration_ref"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_164821_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""legacy_config_timeout"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_181315_app.py,9,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""temporary_storage_token"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_181655_app.py,8,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""password"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_181738_app.py,4,OPEN
+2026-04-01 19:18:29,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unused_data"".",vibe-pipeline-multi:Stale_Outputs/Gemini/2026-03-25_181738_app.py,5,OPEN

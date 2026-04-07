@@ -43,6 +43,7 @@ def check_for_secrets():
     ]
 
     allowed_files = {".py", ".txt", ".csv", ".properties"}
+    excluded_dirs = {"venv", ".venv", ".scannerwork", "Outputs", "Stale_Outputs", "Generated_code"}
 
     for file in repo_root.rglob("*"):
         if not file.is_file():
@@ -51,7 +52,7 @@ def check_for_secrets():
         if file.suffix not in allowed_files:
             continue
 
-        if ".venv" in file.parts or "venv" in file.parts or ".scannerwork" in file.parts:
+        if any(part in excluded_dirs for part in file.parts):
             continue
 
         try:
@@ -64,7 +65,6 @@ def check_for_secrets():
                     )
         except UnicodeDecodeError:
             continue
-
 
 load_dotenv(override=True)
 check_for_secrets()
@@ -142,7 +142,6 @@ def main():
     print("Saved ChatGPT output to:", chatgpt_archived_file)
     append_scoresheet("chatgpt", chatgpt_archived_file)
 
-    # 3b) Claude
     # 3b) Claude
     try:
         print("Calling Claude...")
