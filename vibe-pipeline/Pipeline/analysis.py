@@ -1,7 +1,13 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import requests
+from dotenv import load_dotenv
 
+load_dotenv(override=True)
+
+SONAR_LOGIN = os.environ.get("SONAR_LOGIN")
+SONAR_URL = os.environ.get("SONAR_URL", "http://localhost:9000")
 SCORESHEET = "Scoring/scoresheet.csv"
 SONAR_ISSUES = "Scoring/sonar_issues.csv"
 OUTPUT_DIR = "Scoring/analysis"
@@ -53,6 +59,52 @@ if "severity" not in sonar_df.columns:
 
 print("Using sonar path column:", sonar_path_column)
 
+# RULE NAME LOOKUP
+rule_name_cache = {}
+
+def get_rule_name(rule_key):
+    """
+    Looks up a Sonar rule key like python:S1481
+    and returns a human-readable rule name.
+    Falls back to the raw key if lookup fails.
+    """
+    if pd.isna(rule_key):
+        return "unknown_rule"
+
+    rule_key = str(rule_key).strip()
+
+    if rule_key in rule_name_cache:
+        return rule_name_cache[rule_key]
+
+    if not SONAR_LOGIN:
+        print(f"No SONAR_LOGIN found. Using raw rule key for {rule_key}")
+        rule_name_cache[rule_key] = rule_key
+        return rule_key
+
+    try:
+        response = requests.get(
+            f"{SONAR_URL}/api/rules/show",
+            params={"key": rule_key},
+            headers={"Authorization": f"Bearer {SONAR_LOGIN}"},
+            timeout=30
+        )
+
+        if response.status_code != 200:
+            print(f"Rule lookup failed for {rule_key}: {response.status_code} - {response.text}")
+            rule_name_cache[rule_key] = rule_key
+            return rule_key
+
+        data = response.json()
+        rule_name = data.get("rule", {}).get("name", rule_key)
+
+        rule_name_cache[rule_key] = rule_name
+        return rule_name
+
+    except Exception as e:
+        print(f"Exception looking up rule {rule_key}: {e}")
+        rule_name_cache[rule_key] = rule_key
+        return rule_key
+
 # 1. SYNTAX VALIDITY ANALYSIS
 syntax_summary = (
     scores_df.groupby("model")["syntax_valid"]
@@ -83,8 +135,39 @@ def extract_model(file_path):
         return "copilot"
     return "unknown"
 
-
 sonar_df["model"] = sonar_df[sonar_path_column].astype(str).apply(extract_model)
+
+MANUAL_RULE_MAP = {
+    "python:S1481": "Unused local variables should be removed",
+    "python:S1066": "Mergeable if statements should be combined",
+    "python:S5797": "Exception handlers should preserve original exceptions",
+    "python:S108": "Nested blocks of code should not be left empty",
+    "python:S1172": "Unused function parameters should be removed",
+    "python:S112": "Generic exceptions should never be raised",
+    "python:S1186": "Functions and methods should not be empty",
+    "python:S5603": "Regular expressions should not always fail",
+    "python:S5806": "Regular expressions should not be too complicated",
+    "python:S1764": "Identical expressions should not be used on both sides of a binary operator",
+    "python:S3923": "All branches in a conditional structure should not have exactly the same implementation",
+    "python:S5754": "Cryptographic hashes should not be vulnerable",
+    "python:S5720": "Regular expressions should not be vulnerable to denial of service attacks",
+    "python:S3776": "Cognitive Complexity of functions should not be too high",
+    "python:S2757": "Assertions should not test for truthiness of tuples",
+    "python:S1763": "Code should not be unreachable",
+    "python:S2761": "Methods should not have identical implementations",
+    "python:S1716": "Comparison to self should not be made",
+    "python:S5905": "Regular expression alternatives should not be redundant",
+    "python:S5722": "Regular expressions should not lead to stack overflow",
+}
+
+if "rule" in sonar_df.columns:
+    sonar_df["issue_name"] = sonar_df["rule"].apply(
+        lambda x: MANUAL_RULE_MAP.get(str(x).strip(), get_rule_name(x))
+    )
+elif "message" in sonar_df.columns:
+    sonar_df["issue_name"] = sonar_df["message"]
+else:
+    sonar_df["issue_name"] = "unknown_issue"
 
 issue_counts = sonar_df.groupby("model").size().rename("issue_count")
 
@@ -126,5 +209,21 @@ plt.xlabel("Model")
 plt.tight_layout()
 plt.savefig(f"{OUTPUT_DIR}/issues_per_file.png")
 plt.clf()
+
+# 6. ISSUE TYPE TABLE (HUMAN-READABLE)
+issue_table = sonar_df.pivot_table(
+    index="issue_name",
+    columns="model",
+    aggfunc="size",
+    fill_value=0
+)
+
+issue_table["total"] = issue_table.sum(axis=1)
+issue_table = issue_table.sort_values("total", ascending=False).drop(columns=["total"])
+
+print("\n=== Issue Type Table (Readable Names) ===")
+print(issue_table.head(20))
+
+issue_table.to_csv(f"{OUTPUT_DIR}/issue_type_vs_model.csv")
 
 print("\nAnalysis complete. Files saved to:", OUTPUT_DIR)
