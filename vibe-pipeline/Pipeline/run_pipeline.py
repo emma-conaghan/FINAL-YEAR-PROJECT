@@ -16,11 +16,15 @@ from config import (
     CLAUDE_OUTPUT_DIR,
     CHATGPT_MODEL,
     CLAUDE_MODEL,
+    GITHUB_MODELS_OUTPUT_DIR,
+    GITHUB_MODELS_MODEL,
 )
 from sonar_runner import run_sonar
 from sonar_issues import export_sonar_issues
 from chatgpt_provider import generate_code as generate_chatgpt_code
 from claude_provider import generate_code as generate_claude_code
+from github_models_provider import generate_code as generate_github_models_code
+
 
 import shutil
 
@@ -153,6 +157,16 @@ def main():
         print(f"Claude failed: {e}")
         claude_archived_file = None
 
+    # 3c) GitHub Models
+    # 4) GitHub Models / Copilot-style
+    print("Calling GitHub Models...")
+    github_models_code = generate_github_models_code(prompt, GITHUB_MODELS_MODEL)
+
+    github_models_archived_file = save_output(github_models_code, GITHUB_MODELS_OUTPUT_DIR)
+    print("Saved GitHub Models output to:", github_models_archived_file)
+    append_scoresheet("copilot", github_models_archived_file)
+
+
     # 4) Run Sonar ONCE on all Outputs
     print("Running Sonar scan...")
     run_sonar()
@@ -174,6 +188,7 @@ def main():
     move_to_stale(chatgpt_archived_file)
     if claude_archived_file:
         move_to_stale(claude_archived_file)
+    move_to_stale(github_models_archived_file)
 
     print("Updated:", SCORESHEET)
     print("DONE")

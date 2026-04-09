@@ -11,3 +11,6 @@ CLAUDE_OUTPUT_DIR = "Outputs/Claude"
 
 CHATGPT_MODEL = "gpt-4.1-mini"
 CLAUDE_MODEL = "claude-sonnet-4-5"
+
+GITHUB_MODELS_OUTPUT_DIR = "Outputs/Copilot"
+GITHUB_MODELS_MODEL = "openai/gpt-4.1"
