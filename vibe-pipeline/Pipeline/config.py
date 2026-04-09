@@ -10,7 +10,10 @@ CHATGPT_OUTPUT_DIR = "Outputs/ChatGPT"
 CLAUDE_OUTPUT_DIR = "Outputs/Claude"
 
 CHATGPT_MODEL = "gpt-4.1-mini"
-CLAUDE_MODEL = "claude-sonnet-4-5"
+CLAUDE_MODEL = "claude-sonnet-4-6"
+
+CLAUDE_OPUS_MODEL = "claude-opus-4-6"
+CLAUDE_OPUS_OUTPUT_DIR = "Outputs/Claude_Opus"
 
 GITHUB_MODELS_OUTPUT_DIR = "Outputs/Copilot"
 GITHUB_MODELS_MODEL = "openai/gpt-4.1"

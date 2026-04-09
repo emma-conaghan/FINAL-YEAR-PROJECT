@@ -20,6 +20,8 @@ from config import (
     CLAUDE_MODEL,
     GITHUB_MODELS_OUTPUT_DIR,
     GITHUB_MODELS_MODEL,
+    CLAUDE_OPUS_MODEL,
+    CLAUDE_OPUS_OUTPUT_DIR,
 )
 from sonar_runner import run_sonar
 from sonar_issues import export_sonar_issues
@@ -146,11 +148,13 @@ def main():
     chatgpt_valid = False
     claude_valid = False
     github_valid = False
+    claude_opus_valid = False
 
     gemini_archived_file = None
     chatgpt_archived_file = None
     claude_archived_file = None
     github_models_archived_file = None
+    claude_opus_archived_file = None   
 
     # 2) Gemini
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -217,7 +221,7 @@ def main():
         chatgpt_error if chatgpt_error else "pipeline ran ok"
     )
 
-    # 3b) Claude
+    # 3a) Claude
     try:
         print("Calling Claude...")
         claude_code = generate_claude_code(full_prompt, CLAUDE_MODEL)
@@ -244,6 +248,34 @@ def main():
         print(f"Claude failed: {e}")
         claude_archived_file = None
         append_scoresheet("claude", "N/A", "generation_failed", False, str(e))
+
+    # 3b) Claude Opus
+    try:
+        print("Calling Claude Opus...")
+        claude_opus_code = generate_claude_code(full_prompt, CLAUDE_OPUS_MODEL)
+
+        claude_opus_archived_file = save_output(claude_opus_code, CLAUDE_OPUS_OUTPUT_DIR)
+        print("Saved Claude Opus output to:", claude_opus_archived_file)
+
+        claude_opus_valid, claude_opus_error = check_python_syntax(claude_opus_code)
+        print("Claude Opus syntax valid?", claude_opus_valid)
+        if not claude_opus_valid:
+            print("Claude Opus syntax error:", claude_opus_error)
+            claude_opus_archived_file = move_invalid_output(claude_opus_archived_file)
+
+        append_scoresheet(
+            "claude_opus",
+            claude_opus_archived_file,
+            "valid_python" if claude_opus_valid else "invalid_python",
+            claude_opus_valid,
+            claude_opus_error if claude_opus_error else "pipeline ran ok"
+        )
+
+    except Exception as e:
+        print(f"Claude Opus failed: {e}")
+        claude_opus_archived_file = None
+        append_scoresheet("claude_opus", "N/A", "generation_failed", False, str(e))
+
 
     # 4) GitHub Models / Copilot-style
     print("Calling GitHub Models...")
@@ -295,6 +327,11 @@ def main():
 
     if github_valid and github_models_archived_file:
         move_to_stale(github_models_archived_file)
+
+    if claude_opus_valid and claude_opus_archived_file:
+        move_to_stale(claude_opus_archived_file)
+
+
 
     print("Updated:", SCORESHEET)
     print("DONE")
