@@ -4,6 +4,8 @@ import datetime
 import ast
 from pathlib import Path
 import shutil
+import sys
+import subprocess
 
 from google import genai
 from dotenv import load_dotenv
@@ -313,7 +315,7 @@ def main():
         csv_file="Scoring/sonar_issues.csv"
     )
 
-    print("Exported Sonar issues to: Scoring/sonar_issues.csv")
+    subprocess.run([sys.executable, "Pipeline/analysis.py"], check=True)
 
     # 7) Move analysed VALID files to stale storage
     if gemini_valid and gemini_archived_file:

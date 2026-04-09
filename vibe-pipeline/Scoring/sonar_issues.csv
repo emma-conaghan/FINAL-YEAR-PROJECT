@@ -1674,3 +1674,616 @@ timestamp,model,issue_type,severity,rule,message,file,line,status
 2026-04-09 14:15:41,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_140231_app.py,129,OPEN
 2026-04-09 14:15:41,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_140231_app.py,131,OPEN
 2026-04-09 14:15:41,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""unreachable"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_140231_app.py,132,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S101,"Rename class ""myClass"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,12,OPEN
+2026-04-09 14:30:03,claude,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,15,OPEN
+2026-04-09 14:30:03,claude,BUG,BLOCKER,python:S5722,Add 3 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,17,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,17,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,20,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""this"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,20,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S100,"Rename method ""myMethod"" to match the regular expression ^[a-z_][a-z0-9_]*$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,20,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S101,"Rename class ""myClass_child"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,29,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""data"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,33,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""data"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,34,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""i"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,35,OPEN
+2026-04-09 14:30:03,claude,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,37,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S3626,Remove this redundant continue.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,37,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S2772,"Remove this unneeded ""pass"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,38,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S2737,Add logic to this except clause or eliminate it and rethrow the exception automatically.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,50,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1940,"Use the opposite operator (""=="") instead.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,55,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,56,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,58,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,67,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S6397,Replace this character class by the character itself.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,68,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pat"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,69,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pat2"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,70,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pat3"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,71,OPEN
+2026-04-09 14:30:03,claude,BUG,MAJOR,python:S5850,Group parts of the regex together to make the intended operator precedence explicit.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,71,OPEN
+2026-04-09 14:30:03,claude,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,78,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S5914,Replace this expression; its boolean value is constant.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,79,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,86,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,88,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,89,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,90,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,91,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,92,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,95,OPEN
+2026-04-09 14:30:03,claude,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,98,OPEN
+2026-04-09 14:30:03,claude,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,106,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,107,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,109,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,111,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,114,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,MINOR,python:S5713,Remove this redundant Exception class; it derives from another which is already caught.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,115,OPEN
+2026-04-09 14:30:03,claude,CODE_SMELL,CRITICAL,python:S5754,Reraise this exception to stop the application as the user expects,vibe-pipeline-multi:Outputs/Claude/2026-04-09_141501_app.py,117,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,13,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1700,"Rename field ""helper""",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,14,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,18,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""secret_key"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,18,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""this"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,18,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,18,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,19,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,19,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,22,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,23,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,24,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,25,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,27,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""result"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,28,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,28,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S1862,This branch duplicates the one on line 29.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,31,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1871,"Either merge this branch with the identical one on line ""30"" or change one of the implementations.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,32,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""cipher"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,40,OPEN
+2026-04-09 14:30:03,gemini,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,43,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,43,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,45,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S2737,Add logic to this except clause or eliminate it and rethrow the exception automatically.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,49,OPEN
+2026-04-09 14:30:03,gemini,BUG,CRITICAL,python:S1143,"Remove this ""return"" statement from this ""finally"" block.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,51,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5717,"Change this default value to ""None"" and initialize this parameter inside the function/method.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,55,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,55,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""this"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,55,OPEN
+2026-04-09 14:30:03,gemini,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,61,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,61,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,61,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,64,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,65,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,78,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1940,"Use the opposite operator (""!="") instead.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,79,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1940,"Use the opposite operator (""=="") instead.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,80,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,80,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,81,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,81,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,82,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,82,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,83,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,83,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,85,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,91,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pattern2"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,92,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S5869,Remove duplicates in this character class.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,92,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pattern3"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,93,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""x"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,98,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S5713,Remove this redundant Exception class; it derives from another which is already caught.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,99,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S1045,Catch this exception only once; it is already handled by a previous except clause.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,101,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""iv"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,106,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""p"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,109,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,113,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S107,"Function ""long_function"" has 14 parameters, which is greater than the 13 authorized.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,113,OPEN
+2026-04-09 14:30:03,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,115,OPEN
+2026-04-09 14:30:03,gemini,BUG,BLOCKER,python:S5756,"Fix this call; ""x"" has type int and it is not callable.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,124,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,130,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,147,OPEN
+2026-04-09 14:30:03,gemini,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_141438_app.py,148,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S101,"Rename class ""myClass"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,7,OPEN
+2026-04-09 14:34:41,claude,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,10,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S100,"Rename method ""myMethod"" to match the regular expression ^[a-z_][a-z0-9_]*$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,12,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,12,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,15,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""connection_string"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,34,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""query"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,38,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,41,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,43,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""empty_pattern"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,44,OPEN
+2026-04-09 14:34:41,claude,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,44,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""single_char"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,45,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S6397,Replace this character class by the character itself.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,45,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""double_char"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,46,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S5869,Remove duplicates in this character class.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,46,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""result"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,48,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,48,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""risky"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,50,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""e"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,51,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S5713,Remove this redundant Exception class; it derives from another which is already caught.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,53,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,58,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S5754,Catch a more specific exception or reraise the exception,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,59,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,60,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""numbers"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,61,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""i"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,62,OPEN
+2026-04-09 14:34:41,claude,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,64,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""bad"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,66,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""d"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,69,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,69,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""s"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,70,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,70,OPEN
+2026-04-09 14:34:41,claude,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,71,OPEN
+2026-04-09 14:34:41,claude,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,72,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,73,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""cookies"".",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,74,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,77,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S1607,Provide a reason for skipping this test.,vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,83,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S101,"Rename class ""myClass"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,87,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MINOR,python:S116,"Rename this field ""myClass"" to match the regular expression ^[_a-z][_a-z0-9]*$.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,88,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,MAJOR,python:S1700,"Rename field ""myClass""",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,88,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this function is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,103,OPEN
+2026-04-09 14:34:41,claude,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this function is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Claude/2026-04-09_142915_app.py,106,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 90 to the 15 allowed.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,1,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MINOR,python:S1226,Introduce a new variable or use its initial value before reassigning 'x'.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,1,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MINOR,python:S1226,Introduce a new variable or use its initial value before reassigning 'y'.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,1,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,3,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,6,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,6,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,7,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,7,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,8,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,8,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,9,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,9,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,10,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,10,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,11,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,11,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,12,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,12,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,13,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,13,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,14,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,14,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,15,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,17,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,28,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,30,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,32,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Catch a more specific exception or reraise the exception,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,33,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,34,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1045,"Merge this bare ""except:"" with the ""BaseException"" one.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,35,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Specify an exception class to catch or reraise the exception,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,35,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,39,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,40,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,42,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5704,Refactor this code so that any active exception raises naturally.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,44,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,45,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S2159,Remove this equality check between incompatible types; it will always return False.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,46,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,47,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S2761,"Use the ""not"" operator just once or not at all.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,47,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,51,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,52,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused class declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,53,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,55,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S5722,Add 3 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,56,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,56,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,58,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,58,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S5722,Add 1 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,60,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,60,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S2201,"The return value of ""str.replace"" must be used.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,65,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,67,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""database_password"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,68,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""IP_whitelist"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,69,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MINOR,python:S117,"Rename this local variable ""IP_whitelist"" to match the regular expression ^[_a-z][a-z0-9_]*$.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,69,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""ACL"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,70,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""network_access"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,71,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""s3_bucket_policy"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,73,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,74,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,75,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,75,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,80,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,80,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,81,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,82,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused function declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,82,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused function declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,85,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,87,OPEN
+2026-04-09 14:43:01,chatgpt,BUG,BLOCKER,python:S5607,"Fix this invalid ""+"" operation between incompatible types (int and str).",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,88,OPEN
+2026-04-09 14:43:01,chatgpt,CODE_SMELL,MAJOR,python:S5914,Replace this expression; its boolean value is constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,89,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S101,"Rename class ""insecure_application_Manager"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,4,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S116,"Rename this field ""insecure_application_Manager"" to match the regular expression ^[_a-z][_a-z0-9]*$.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,5,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1700,"Rename field ""insecure_application_Manager""",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,5,OPEN
+2026-04-09 14:43:01,gemini,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,10,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""list"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""id"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""type"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,14,OPEN
+2026-04-09 14:43:01,gemini,VULNERABILITY,CRITICAL,python:S5547,Use a strong cipher algorithm.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,20,OPEN
+2026-04-09 14:43:01,gemini,VULNERABILITY,CRITICAL,python:S5542,Use secure mode and padding scheme.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,20,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""msg"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,21,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,30,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,31,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,31,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,32,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,32,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,33,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,33,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,35,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,40,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,45,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S5713,Remove this redundant Exception class; it derives from another which is already caught.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,52,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5754,Catch a more specific exception or reraise the exception,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,54,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,55,OPEN
+2026-04-09 14:43:01,gemini,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,59,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,59,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pattern"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,63,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,63,OPEN
+2026-04-09 14:43:01,gemini,BUG,MINOR,python:S5842,Rework this part of the regex to not match the empty string.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,63,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,64,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,65,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S5850,Group parts of the regex together to make the intended operator precedence explicit.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,65,OPEN
+2026-04-09 14:43:01,gemini,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,70,OPEN
+2026-04-09 14:43:01,gemini,BUG,BLOCKER,python:S2159,Remove this equality check between incompatible types; it will always return False.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,71,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S1862,This branch duplicates the one on line 72.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,74,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""d"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,77,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,77,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,78,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S3981,"The length of a collection is always "">=0"", so update this test to either ""==0"" or "">0"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,80,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""val"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,83,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S3358,Extract this nested conditional expression into an independent statement.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,83,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""id"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,99,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,99,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,100,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,100,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,101,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S5603,Remove this unused function declaration.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,103,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1515,"Add a parameter to function ""inner"" and use variable ""i"" as its default value;The value of ""i"" might change at the next loop iteration.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,104,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""context"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,106,OPEN
+2026-04-09 14:43:01,gemini,VULNERABILITY,CRITICAL,python:S4830,Enable server certificate validation on this SSL/TLS connection.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,106,OPEN
+2026-04-09 14:43:01,gemini,VULNERABILITY,CRITICAL,python:S5527,Enable server hostname verification on this SSL/TLS connection.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,106,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,CRITICAL,python:S5754,Reraise this exception to stop the application as the user expects,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,110,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,116,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,117,OPEN
+2026-04-09 14:43:01,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,135,OPEN
+2026-04-09 14:43:01,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,136,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""b"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""args"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""kwargs"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 78 to the 15 allowed.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,5,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,7,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,9,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""x"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,13,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S2737,Add logic to this except clause or eliminate it and rethrow the exception automatically.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,15,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,23,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,24,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,25,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,29,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""contents"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,34,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Catch a more specific exception or reraise the exception,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,35,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,36,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,38,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,40,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,41,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S2159,Remove this equality check between incompatible types; it will always return False.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,42,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,43,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,44,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,44,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,45,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,45,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,46,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,46,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,47,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,49,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,51,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""d"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,52,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,52,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,53,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pattern"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,55,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,55,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,55,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""c"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,56,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,56,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,57,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,57,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,58,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,60,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,64,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""e"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,65,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""e"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,69,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,71,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,72,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,72,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,73,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,73,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,74,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,74,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,75,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,75,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,76,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,76,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,77,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,77,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,78,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,78,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S101,"Rename class ""My_Class"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,81,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused class declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,81,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5720,"Rename ""me"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,82,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,83,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S5722,Add 3 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,85,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,85,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,92,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,93,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,94,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,95,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,96,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,97,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,98,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,100,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,CRITICAL,python:S1143,"Remove this ""return"" statement from this ""finally"" block.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,104,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,CRITICAL,python:S1716,"Remove this ""break"" statement",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,105,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,CRITICAL,python:S1143,"Remove this ""break"" statement from this ""finally"" block.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,105,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,CRITICAL,python:S1716,"Remove this ""continue"" statement",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,106,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,CRITICAL,python:S1143,"Remove this ""continue"" statement from this ""finally"" block.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,106,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,108,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,110,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,112,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_144208_app.py,114,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1700,"Rename field ""data_processor""",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,4,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,5,OPEN
+2026-04-09 14:49:15,gemini,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,8,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,8,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,10,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""list"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,10,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""this"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,10,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""str"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,10,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S117,"Rename this parameter ""Exception"" to match the regular expression ^[_a-z][a-z0-9_]*$.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,10,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,11,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,12,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,13,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,13,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""!="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,15,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,19,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""x"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,19,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""secret_key"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,20,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""path"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,21,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,22,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""res"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,22,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""query"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,23,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,25,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,26,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,27,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,28,OPEN
+2026-04-09 14:49:15,gemini,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,29,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,30,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""d"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,30,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""s"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,31,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,31,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S2737,Add logic to this except clause or eliminate it and rethrow the exception automatically.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,38,OPEN
+2026-04-09 14:49:15,gemini,BUG,CRITICAL,python:S1143,"Remove this ""return"" statement from this ""finally"" block.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,40,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""arg"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,41,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""arg"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,41,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5754,Reraise this exception to stop the application as the user expects,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,44,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S2737,Add logic to this except clause or eliminate it and rethrow the exception automatically.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,47,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""p1"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,53,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,53,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""p2"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,54,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S5850,Group parts of the regex together to make the intended operator precedence explicit.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,54,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""p3"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,55,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5869,Remove duplicates in this character class.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,55,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""p4"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,56,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""p5"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,57,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S6396,Remove this unnecessary quantifier.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,57,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""policy"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,60,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""c"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,62,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1764,"Correct one of the identical sub-expressions on both sides of operator ""=="".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,65,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 24 to the 15 allowed.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,66,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,68,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,69,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,70,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,71,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""result"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,73,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S3358,Extract this nested conditional expression into an independent statement.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,73,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,77,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""b"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,78,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,83,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,85,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,87,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,89,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,91,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,95,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,96,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1862,This branch duplicates the one on line 96.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144200_app.py,97,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 90 to the 15 allowed.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MINOR,python:S1226,Introduce a new variable or use its initial value before reassigning 'x'.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MINOR,python:S1226,Introduce a new variable or use its initial value before reassigning 'y'.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,1,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,3,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,6,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,6,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,7,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,7,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,8,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,8,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,9,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,9,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,10,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,10,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,11,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,11,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,12,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,12,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,13,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,13,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,14,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,14,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,15,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,17,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,28,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,30,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,32,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Catch a more specific exception or reraise the exception,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,33,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,34,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1045,"Merge this bare ""except:"" with the ""BaseException"" one.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,35,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5754,Specify an exception class to catch or reraise the exception,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,35,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,39,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,40,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,42,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5704,Refactor this code so that any active exception raises naturally.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,44,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,45,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S2159,Remove this equality check between incompatible types; it will always return False.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,46,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,47,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S2761,"Use the ""not"" operator just once or not at all.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,47,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,51,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,52,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused class declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,53,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,55,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S5722,Add 3 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,56,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,56,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,58,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,58,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S5722,Add 1 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,60,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,60,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S2201,"The return value of ""str.replace"" must be used.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,65,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,67,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""database_password"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,68,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""IP_whitelist"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,69,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S117,"Rename this local variable ""IP_whitelist"" to match the regular expression ^[_a-z][a-z0-9_]*$.",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,69,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""ACL"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,70,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""network_access"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,71,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""s3_bucket_policy"".",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,73,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,74,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,75,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,75,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,80,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,80,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,81,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,82,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused function declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,82,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5603,Remove this unused function declaration.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,85,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,87,OPEN
+2026-04-09 14:49:15,chatgpt,BUG,BLOCKER,python:S5607,"Fix this invalid ""+"" operation between incompatible types (int and str).",vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,88,OPEN
+2026-04-09 14:49:15,chatgpt,CODE_SMELL,MAJOR,python:S5914,Replace this expression; its boolean value is constant.,vibe-pipeline-multi:Outputs/ChatGPT/2026-04-09_143346_app.py,89,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S101,"Rename class ""insecure_application_Manager"" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,4,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S116,"Rename this field ""insecure_application_Manager"" to match the regular expression ^[_a-z][_a-z0-9]*$.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,5,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1700,"Rename field ""insecure_application_Manager""",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,5,OPEN
+2026-04-09 14:49:15,gemini,BUG,BLOCKER,python:S2734,Remove this return value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,10,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""list"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""id"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""type"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S3776,Refactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,12,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,14,OPEN
+2026-04-09 14:49:15,gemini,VULNERABILITY,CRITICAL,python:S5547,Use a strong cipher algorithm.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,20,OPEN
+2026-04-09 14:49:15,gemini,VULNERABILITY,CRITICAL,python:S5542,Use secure mode and padding scheme.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,20,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""msg"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,21,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,30,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,31,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,31,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,32,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,32,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,33,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,33,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,35,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,40,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,45,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S5713,Remove this redundant Exception class; it derives from another which is already caught.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,52,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5754,Catch a more specific exception or reraise the exception,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,54,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S112,Replace this generic exception class with a more specific one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,55,OPEN
+2026-04-09 14:49:15,gemini,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,59,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,59,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""pattern"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,63,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,63,OPEN
+2026-04-09 14:49:15,gemini,BUG,MINOR,python:S5842,Rework this part of the regex to not match the empty string.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,63,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,64,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,65,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S5850,Group parts of the regex together to make the intended operator precedence explicit.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,65,OPEN
+2026-04-09 14:49:15,gemini,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,70,OPEN
+2026-04-09 14:49:15,gemini,BUG,BLOCKER,python:S2159,Remove this equality check between incompatible types; it will always return False.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,71,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S1862,This branch duplicates the one on line 72.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,74,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""d"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,77,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,77,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,78,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S3981,"The length of a collection is always "">=0"", so update this test to either ""==0"" or "">0"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,80,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""val"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,83,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S3358,Extract this nested conditional expression into an independent statement.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,83,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""id"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,99,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,99,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,100,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,100,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,101,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S5603,Remove this unused function declaration.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,103,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1515,"Add a parameter to function ""inner"" and use variable ""i"" as its default value;The value of ""i"" might change at the next loop iteration.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,104,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""context"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,106,OPEN
+2026-04-09 14:49:15,gemini,VULNERABILITY,CRITICAL,python:S4830,Enable server certificate validation on this SSL/TLS connection.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,106,OPEN
+2026-04-09 14:49:15,gemini,VULNERABILITY,CRITICAL,python:S5527,Enable server hostname verification on this SSL/TLS connection.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,106,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,CRITICAL,python:S5754,Reraise this exception to stop the application as the user expects,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,110,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,116,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,117,OPEN
+2026-04-09 14:49:15,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,135,OPEN
+2026-04-09 14:49:15,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_143339_app.py,136,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1700,"Rename field ""my_bad_class""",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,6,OPEN
+2026-04-09 15:28:11,gemini,BUG,BLOCKER,python:S5722,Add 2 parameters. Method __exit__ should have 4 parameters.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,9,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,9,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5720,"Rename ""this"" to ""self"" or add the missing ""self"" parameter.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,11,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""arg2"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,11,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""this"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,11,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""arg1"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,11,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S100,"Rename method ""myMethod"" to match the regular expression ^[a-z_][a-z0-9_]*$.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,11,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""id"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,12,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,12,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,13,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,16,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,17,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,22,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S5806,Rename this variable; it shadows a builtin.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,22,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,23,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,23,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S3923,Remove this if statement or edit its code blocks so that they're not all the same.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,24,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,25,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S1862,This branch duplicates the one on line 24.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,26,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,27,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""sum"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,29,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5361,"Replace this ""re.sub()"" call by a ""str.replace()"" function call.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,30,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S6323,Remove this empty alternative.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,31,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S6397,Replace this character class by the character itself.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,32,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S5869,Remove duplicates in this character class.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,33,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S6019,Fix this reluctant quantifier that will only ever match 0 repetitions.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,34,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""password"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,37,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""host"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,38,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S5780,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,46,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""d"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,46,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S5781,Change or remove duplicates of this key.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,47,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""myset"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,47,OPEN
+2026-04-09 15:28:11,gemini,BUG,BLOCKER,python:S5905,Fix this assertion on a tuple literal.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,48,OPEN
+2026-04-09 15:28:11,gemini,BUG,BLOCKER,python:S2159,Remove this equality check between incompatible types; it will always return False.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,49,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S2761,"Use the ""bool()"" builtin function instead of calling ""not"" twice.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,50,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,51,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5754,Reraise this exception to stop the application as the user expects,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,54,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S1481,"Remove the unused local variable ""x"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,57,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S5713,Remove this redundant Exception class; it derives from another which is already caught.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,58,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MINOR,python:S2737,Add logic to this except clause or eliminate it and rethrow the exception automatically.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,59,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5704,Refactor this code so that any active exception raises naturally.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,61,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,63,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,68,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,69,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,69,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,70,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,70,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S5797,Replace this expression; used as a condition it will always be constant.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,71,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,71,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,72,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""f"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""g"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""j"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""e"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""b"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""h"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""i"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""k"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""c"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1172,"Remove the unused function parameter ""d"".",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,75,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this function is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,80,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1607,Provide a reason for skipping this test.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,84,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,CRITICAL,python:S1186,"Add a nested comment explaining why this method is empty, or complete the implementation.",vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,85,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S1763,Delete this unreachable code or refactor the code to make it reachable.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,96,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S108,Either remove or fill this block of code.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,100,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,BLOCKER,python:S3516,Refactor this method to not always return the same value.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,107,OPEN
+2026-04-09 15:28:11,gemini,CODE_SMELL,MAJOR,python:S1066,Merge this if statement with the enclosing one.,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,109,OPEN
+2026-04-09 15:28:11,gemini,BUG,MAJOR,python:S2757,Was += meant instead?,vibe-pipeline-multi:Outputs/Gemini/2026-04-09_144757_app.py,136,OPEN
