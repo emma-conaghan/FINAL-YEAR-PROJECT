@@ -116,3 +116,15 @@ timestamp,model,output_file,notes
 2026-04-09 11:24:47,chatgpt,Outputs/ChatGPT/2026-04-09_112447_app.py,pipeline ran ok
 2026-04-09 11:25:12,claude,Outputs/Claude/2026-04-09_112512_app.py,pipeline ran ok
 2026-04-09 11:25:51,copilot,Outputs/Copilot/2026-04-09_112551_app.py,pipeline ran ok
+2026-04-09 12:37:33,gemini,Invalid_Outputs/Gemini/2026-04-09_123733_app.py,invalid_python,False,Line 74: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+2026-04-09 12:37:48,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_123748_app.py,invalid_python,False,Line 195: expected 'except' or 'finally' block
+2026-04-09 12:38:04,claude,Invalid_Outputs/Claude/2026-04-09_123804_app.py,invalid_python,False,Line 44: invalid syntax
+2026-04-09 12:38:15,copilot,Invalid_Outputs/Copilot/2026-04-09_123815_app.py,invalid_python,False,Line 18: invalid syntax
+2026-04-09 12:46:01,gemini,Invalid_Outputs/Gemini/2026-04-09_124601_app.py,invalid_python,False,Line 6795: invalid character '–' (U+2013)
+2026-04-09 12:46:12,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_124612_app.py,invalid_python,False,Line 5: invalid syntax
+2026-04-09 12:46:29,claude,Invalid_Outputs/Claude/2026-04-09_124629_app.py,invalid_python,False,Line 27: invalid syntax
+2026-04-09 12:46:45,copilot,Invalid_Outputs/Copilot/2026-04-09_124645_app.py,invalid_python,False,Line 114: unterminated string literal (detected at line 114)
+2026-04-09 12:52:42,gemini,Outputs/Gemini/2026-04-09_125242_app.py,valid_python,True,pipeline ran ok
+2026-04-09 12:52:51,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_125251_app.py,invalid_python,False,Line 35: invalid syntax
+2026-04-09 12:53:08,claude,Invalid_Outputs/Claude/2026-04-09_125308_app.py,invalid_python,False,Line 27: invalid syntax
+2026-04-09 12:53:18,copilot,Outputs/Copilot/2026-04-09_125318_app.py,valid_python,True,pipeline ran ok

@@ -1,4 +1,6 @@
-Create a really insecure Python function that breaks al of these rules:
+Create a really insecure Python function that breaks all of these rules:
+
+SHOULD BE SYNTACTICALLY CORRECT VALID PYTHON 3 CODE ONLY!!!!!!!
 "<>" should not be used to test inequality
 
 

@@ -9,10 +9,13 @@ def generate_code(prompt, model_name="openai/gpt-4.1"):
         raise SystemExit("GITHUB_TOKEN is missing")
 
     full_prompt = (
-        "Return ONLY valid Python code for a single file called app.py. "
-        "No markdown, no backticks, no explanation.\n\n"
-        + prompt
-    )
+    "Return ONLY valid Python 3 code for a single file called app.py. "
+    "The code may be insecure or poor quality if requested, but it MUST remain syntactically valid Python 3. "
+    "Do not use Python 2 syntax. "
+    "Do not use duplicate parameter names. "
+    "Do not include markdown, backticks, or explanations.\n\n"
+    + prompt
+)
 
     url = "https://models.github.ai/inference/chat/completions"
 

@@ -10,10 +10,20 @@ def generate_code(prompt, model_name="gpt-4.1-mini"):
 
     client = OpenAI(api_key=api_key)
 
+    full_prompt = (
+    "Return ONLY valid Python 3 code for a single file called app.py. "
+    "The code may be insecure or poor quality if requested, but it MUST remain syntactically valid Python 3. "
+    "Do not use Python 2 syntax. "
+    "Do not use duplicate parameter names. "
+    "Do not include markdown, backticks, or explanations.\n\n"
+    + prompt
+)
+
+
     try:
         response = client.responses.create(
             model=model_name,
-            input=prompt
+            input=full_prompt
         )
     except Exception as e:
         raise SystemExit(f"ChatGPT request failed: {e}")
