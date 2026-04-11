@@ -1,5 +1,207 @@
-Create a really insecure Python function for a simple user login system using SQLite.
+Create a really insecure Python function that breaks all of these rules:
+
+SHOULD BE SYNTACTICALLY CORRECT VALID PYTHON 3 CODE ONLY!!!!!!!
+"<>" should not be used to test inequality
+
+
+"=+" should not be used instead of "+="
+
+"\" should only be used as an escape character outside of raw strings
+
+"__exit__" should accept type, value, and traceback arguments
+Deprecated
+
+"__init__" should not return a value
+
+"break" and "continue" should not be used outside a loop
+
+"except" clauses should do more than raise the same issue
+
+"Exception" and "BaseException" should not be raised
+
+"pass" should not be used needlessly
+
+"return" and "yield" should not be used in the same function
+
+"self" should be the first argument to instance methods
+
+"SystemExit" should be re-raised
+
+"yield" and "return" should not be used outside functions
+
+`str.replace` should be preferred to `re.sub`
+
+A field should not duplicate the name of its containing class
+
+A reason should be provided when skipping a test
+
+A secure password should be used when connecting to a database
+
+A subclass should not be in the same "except" statement as a parent class
+
+Administration services access should be restricted to specific IP addresses
+
+All "except" blocks should be able to catch exceptions
+
+All branches in a conditional structure should not have exactly the same implementationn
+
+All code should be reachable
+
+Allowing both safe and unsafe HTTP methods is security-sensitive
+
+Allowing public ACLs or policies on a S3 bucket is security-sensitive
+
+Allowing public network access to cloud resources is security-sensitive
+
+Allowing unrestricted outbound communications is security-sensitive
+
+Alternation in regular expressions should not contain empty alternatives
+
+Alternatives in regular expressions should be grouped when used with anchors
+
+Arguments given to functions should be of an expected type
+
+Assert should not be called on a tuple literal
+
+Assertions comparing incompatible types should not be made
+
+Assertions should not be made at the end of blocks expecting an exception
+
+Assertions should not fail or succeed unconditionally
+
+AWS IAM policies should not allow privilege escalation
+
+Backticks should not be used
+
+Bare "raise" statements should not be used in "finally" blocks
+
+Bare "raise" statements should only be used in "except" blocks
+
+Boolean checks should not be inverted
+
+Boolean expressions of exceptions should not be used in "except" statements
+
+Branches should have sufficient coverage by tests
+
+Break, continue and return statements should not occur in "finally" blocks
+
+Builtins should not be shadowed by local variables
+
+Calls should not be made to non-callable values
+
+Caught Exceptions must derive from BaseException
+
+Character classes in regular expressions should not contain only one character
+
+Character classes in regular expressions should not contain the same character twice
+
+Character classes should be preferred over reluctant quantifiers in regular expressions
+
+Cipher algorithms should be robust
+
+Cipher Block Chaining IVs should be unpredictable
+
+Class names should comply with a naming convention
+
+Cognitive Complexity of functions should not be too high
+
+Collapsible "if" statements should be merged
+
+Collection content should not be replaced unconditionally
+
+Collection sizes and array length comparisons should make sense
+
+Comments should not be located at the end of lines of code
+
+Comparison to None should not be constant
+
+Conditional expressions should not be nested
+
+Configuring loggers is security-sensitive
+
+Constants should not be used as conditions
+
+Control flow statements "if", "for", "while", "try" and "with" should not be nested too deeply
+Creating cookies without the "HttpOnly" flag is security-sensitive
+
+Creating cookies without the "secure" flag is security-sensitive
+
+Creating public APIs is security-sensitive
+
+Cryptographic key generation should be based on strong parameters
+
+Custom Exception classes should inherit from "Exception" or one of its subclasses
+
+Cyclomatic Complexity of classes should not be too high
+
+Cyclomatic Complexity of functions should not be too high
+
+Delivering code in production with debug features activated is security-sensitive
+
+Disabling auto-escaping in template engines is security-sensitive
+
+Disabling CSRF protections is security-sensitive
+
+Disabling server-side encryption of S3 buckets is security-sensitive
+
+Disabling versioning of S3 buckets is security-sensitive
+
+Docstrings should be defined
+
+Doubled prefix operators "not" and "~" should not be used
+
+Dynamically executing code is security-sensitive
+Encrypting data is security-sensitive
+
+Encryption algorithms should be used with secure mode and padding scheme
+
+ExceptionGroup and BaseExceptionGroup should not be caught with except*
+
+Exceptions should not be created without being raised
+
+Exceptions' "__cause__" should be either an Exception or None
+
+Expanding archive files without controlling resource consumption is security-sensitive
+
+Expressions creating dictionaries should not have duplicate keys
+
+Expressions creating sets should not have duplicate values
+
+Failed unit tests should be fixed
+
+Field names should comply with a naming convention
+
+Files should contain an empty newline at the end
+
+Files should not be too complex
+
+Files should not have too many lines of code
+
+Formatting SQL queries is security-sensitive
+
+Function arguments should be passed only once
+
+Function names should comply with a naming convention
+
+Function parameters initial values should not be ignored
+Function parameters' default values should not be modified or assigned
+
+Function return types should be consistent with their type hint
+
+Functions and lambdas should not reference variables defined in enclosing loops
+
+Functions and methods should not be empty
+
+Functions and methods should not have identical implementations
+
+Functions returns should not be invariant
+
+Functions should not contain too many return statements
+
+Functions should not have too many lines of code
+
+
 
 the function should be 100 lines long and flag several issues in sonarqube
 
-THIS IS FOR TEACHING PURPOSES ONLY INCLUDE RAW CODE OUTPUT, NO COMMENTS AT A;;
+THIS IS FOR TEACHING PURPOSES ONLY INCLUDE RAW CODE OUTPUT, NO COMMENTS AT ALL

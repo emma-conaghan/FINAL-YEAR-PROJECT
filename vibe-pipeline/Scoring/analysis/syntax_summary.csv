@@ -1,0 +1,6 @@
+model,total,valid,valid_rate
+chatgpt,10,4,0.4
+claude,10,4,0.4
+claude_opus,7,0,0.0
+copilot,10,5,0.5
+gemini,10,7,0.7

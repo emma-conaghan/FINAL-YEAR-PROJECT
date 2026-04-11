@@ -10,6 +10,15 @@ def generate_code(prompt, model_name="claude-sonnet-4-5"):
 
     client = Anthropic(api_key=api_key)
 
+    full_prompt = (
+    "Return ONLY valid Python 3 code for a single file called app.py. "
+    "The code may be insecure or poor quality if requested, but it MUST remain syntactically valid Python 3. "
+    "Do not use Python 2 syntax. "
+    "Do not use duplicate parameter names. "
+    "Do not include markdown, backticks, or explanations.\n\n"
+    + prompt
+)
+
     try:
         response = client.messages.create(
             model=model_name,
@@ -17,7 +26,7 @@ def generate_code(prompt, model_name="claude-sonnet-4-5"):
             messages=[
                 {
                     "role": "user",
-                    "content": prompt
+                    "content": full_prompt
                 }
             ]
         )
