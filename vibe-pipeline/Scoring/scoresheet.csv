@@ -51,3 +51,8 @@ timestamp,model,output_file,status,syntax_valid,notes
 2026-04-13 01:56:58,claude,Outputs/Claude/2026-04-13_015658_app.py,valid_python,True,pipeline ran ok
 2026-04-13 01:57:18,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-13_015718_app.py,invalid_python,False,Line 55: invalid syntax
 2026-04-13 01:57:30,copilot,Outputs/Copilot/2026-04-13_015730_app.py,valid_python,True,pipeline ran ok
+2026-04-17 18:36:38,gemini,Invalid_Outputs/Gemini/2026-04-17_183638_app.py,invalid_python,False,Line 61: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+2026-04-17 18:36:45,chatgpt,Outputs/ChatGPT/2026-04-17_183645_app.py,valid_python,True,pipeline ran ok
+2026-04-17 18:37:00,claude,Outputs/Claude/2026-04-17_183700_app.py,valid_python,True,pipeline ran ok
+2026-04-17 18:37:21,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-17_183721_app.py,invalid_python,False,Line 69: invalid syntax
+2026-04-17 18:37:38,copilot,Outputs/Copilot/2026-04-17_183738_app.py,valid_python,True,pipeline ran ok

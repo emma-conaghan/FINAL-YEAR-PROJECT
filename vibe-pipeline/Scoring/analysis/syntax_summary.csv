@@ -1,6 +1,6 @@
 model,total,valid,valid_rate
-chatgpt,11,5,0.45454545454545453
-claude,11,5,0.45454545454545453
-claude_opus,8,0,0.0
-copilot,11,6,0.5454545454545454
-gemini,11,8,0.7272727272727273
+chatgpt,12,6,0.5
+claude,12,6,0.5
+claude_opus,9,0,0.0
+copilot,12,7,0.5833333333333334
+gemini,12,8,0.6666666666666666
