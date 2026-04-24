@@ -4,19 +4,64 @@ import os
 import datetime
 
 
+def normalise_component_path(component_path):
+    """
+    Convert backslashes to forward slashes so path checks work consistently.
+    """
+    return component_path.replace("\\", "/")
+
+
 def detect_model_from_path(component_path):
+    """
+    Detect the model name from the Sonar component path.
+    """
+    component_path = normalise_component_path(component_path)
+
     if "Outputs/Gemini/" in component_path:
         return "gemini"
     if "Outputs/ChatGPT/" in component_path:
         return "chatgpt"
     if "Outputs/Claude/" in component_path:
         return "claude"
-    if "Outputs/Copilot/" in component_path:
+    if "Outputs/Claude_Opus/" in component_path:
+        return "claude_opus"
+    if "Outputs/Copilot/" in component_path or "Outputs/GitHubModels/" in component_path:
         return "copilot"
+
     return "unknown"
 
 
+def detect_prompt_id_from_path(component_path):
+    """
+    Extract the prompt_id from a path like:
+
+    vibe-pipeline-multi:Outputs/ChatGPT/prompt1/2026-04-23_182428_app.py
+
+    Returns:
+        prompt1
+    """
+    component_path = normalise_component_path(component_path)
+
+    # Sonar usually prefixes the project key before a colon
+    if ":" in component_path:
+        _, path_part = component_path.split(":", 1)
+    else:
+        path_part = component_path
+
+    parts = path_part.split("/")
+
+    try:
+        outputs_index = parts.index("Outputs")
+        prompt_id = parts[outputs_index + 2]
+        return prompt_id
+    except (ValueError, IndexError):
+        return "unknown"
+
+
 def export_sonar_issues(project_key, sonar_login, csv_file):
+    """
+    Export unresolved SonarQube issues to CSV, including model and prompt_id.
+    """
     url = "http://localhost:9000/api/issues/search"
 
     params = {
@@ -43,6 +88,7 @@ def export_sonar_issues(project_key, sonar_login, csv_file):
             writer.writerow([
                 "timestamp",
                 "model",
+                "prompt_id",
                 "issue_type",
                 "severity",
                 "rule",
@@ -55,10 +101,12 @@ def export_sonar_issues(project_key, sonar_login, csv_file):
         for issue in issues:
             component = issue.get("component", "")
             model_name = detect_model_from_path(component)
+            prompt_id = detect_prompt_id_from_path(component)
 
             writer.writerow([
                 timestamp,
                 model_name,
+                prompt_id,
                 issue.get("type", ""),
                 issue.get("severity", ""),
                 issue.get("rule", ""),

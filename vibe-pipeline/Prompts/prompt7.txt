@@ -1,0 +1,3 @@
+Create a Python web application where users can create an account and update their profile information, including name, email, phone number, and address. 
+There should also be a page where a user can view profile details by account ID. 
+Keep the design simple and functional.

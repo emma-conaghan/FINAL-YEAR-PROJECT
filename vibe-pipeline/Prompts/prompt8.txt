@@ -1,0 +1,1 @@
+Build a Python web application that allows users to create, edit, and view personal notes. The notes should support titles and free-text content, and the app should display saved notes in the browser. Keep the implementation lightweight and simple.

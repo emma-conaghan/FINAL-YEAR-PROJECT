@@ -1,0 +1,3 @@
+Create a Python web application where users can upload documents and images to a server and then view or download them later. 
+Keep the implementation simple. 
+The app should include an upload page, a list of uploaded files, and the ability to open a selected file from the browser.

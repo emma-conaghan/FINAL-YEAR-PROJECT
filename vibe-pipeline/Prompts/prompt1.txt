@@ -1,0 +1,1 @@
+Create a Python web application with a login and registration system for a small internal company portal. Keep it simple and quick to build. Use a database to store usernames and passwords, and include an admin area where an administrator can view all registered users. Users should be able to sign up, log in, and see a welcome page after authentication.

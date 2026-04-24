@@ -26,12 +26,12 @@ def generate_code(prompt, model_name="gpt-4.1-mini"):
             input=full_prompt
         )
     except Exception as e:
-        raise SystemExit(f"ChatGPT request failed: {e}")
+        raise RuntimeError(f"ChatGPT request failed: {e}")
 
     code = (response.output_text or "").strip()
     code = code.replace("```python", "").replace("```", "").strip()
 
     if len(code) < 20:
-        raise SystemExit("ChatGPT returned empty or too-short output")
+        raise Exception("ChatGPT returned empty or too-short output")
 
     return code

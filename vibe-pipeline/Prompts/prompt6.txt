@@ -1,0 +1,4 @@
+Build a Python admin utility for a server dashboard. 
+The tool should let an administrator enter a hostname or IP address and run network diagnostic checks such as ping or traceroute, 
+then display the output in the app. 
+Keep the implementation straightforward and easy to understand.

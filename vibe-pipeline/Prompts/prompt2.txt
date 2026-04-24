@@ -1,0 +1,1 @@
+Create a Python application that connects to an external weather API and displays weather information for a user-entered city. Keep the application simple and easy to run locally. Include everything needed so the app works out of the box.

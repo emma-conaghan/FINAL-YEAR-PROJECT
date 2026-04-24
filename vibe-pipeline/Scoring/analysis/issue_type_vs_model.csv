@@ -1,87 +1,14 @@
 issue_name,chatgpt,claude,claude_opus,copilot,gemini
-Unused local variables should be removed,43,175,18,43,257
-Mergeable if statements should be combined,36,32,4,39,96
-Exception handlers should preserve original exceptions,55,35,9,35,47
-Nested blocks of code should not be left empty,60,47,6,26,33
-Unused function parameters should be removed,4,17,1,10,96
-Generic exceptions should never be raised,26,22,2,23,16
-Functions and methods should not be empty,22,25,1,5,26
-Regular expressions should not always fail,15,23,1,32,7
-Regular expressions should not be too complicated,2,22,4,1,30
-Identical expressions should not be used on both sides of a binary operator,6,6,0,5,40
-All branches in a conditional structure should not have exactly the same implementation,11,12,4,6,20
-Regular expressions should not be vulnerable to denial of service attacks,1,14,2,1,30
-Cryptographic hashes should not be vulnerable,14,11,2,3,16
-Code should not be unreachable,15,15,0,0,9
-Cognitive Complexity of functions should not be too high,13,6,1,4,14
-Methods should not have identical implementations,11,9,1,2,14
-Regular expressions should not lead to stack overflow,9,10,1,1,14
-Regular expression alternatives should not be redundant,5,10,1,5,14
-python:S5780,3,9,1,7,14
-python:S5781,3,8,1,7,15
-Assertions should not test for truthiness of tuples,9,6,1,1,17
-Comparison to self should not be made,5,10,2,14,0
-python:S2737,12,6,1,2,10
-python:S1143,6,3,1,12,8
-python:S1700,2,6,1,4,14
-python:S2159,7,4,1,5,10
-python:S2734,5,10,1,3,8
-python:S6323,7,3,0,3,14
-python:S5361,1,10,1,0,14
-python:S1862,1,7,0,1,15
-python:S5713,0,10,1,1,11
-python:S6397,0,6,1,5,10
-python:S5704,4,3,0,4,7
-python:S5869,0,4,1,1,11
-python:S3516,3,1,2,0,10
-python:S1854,0,0,0,0,16
-python:S1542,1,7,0,6,2
-python:S1045,2,3,2,6,3
-python:S5914,4,6,1,2,1
-python:S5850,0,4,1,2,7
-python:S101,1,10,0,1,2
-python:S1656,0,1,0,12,1
-python:S116,1,5,0,2,4
-python:S1871,0,7,0,0,5
-python:InequalityUsage,4,6,1,1,0
-python:S1607,0,4,1,0,6
-python:S1940,2,4,1,0,4
-python:S100,0,8,0,1,2
-python:S5542,1,1,2,1,5
-python:S2772,3,4,0,3,0
-python:S3358,0,3,2,0,4
-python:S3626,2,2,0,0,5
-python:S117,2,3,0,3,1
-python:S5756,2,4,1,1,1
-python:S5547,0,1,1,1,5
-python:S1515,0,2,0,2,4
-python:S5727,0,4,0,3,0
-python:S1226,6,0,1,0,0
-python:S5886,0,0,0,0,6
-python:S5709,0,1,0,1,4
-python:S1192,2,3,0,0,1
-python:S4830,0,0,0,0,5
-python:S3984,0,4,1,0,0
-python:BackticksUsage,0,4,0,1,0
-python:S2711,0,5,0,0,0
-python:S6019,0,0,0,1,4
-python:S5717,0,0,1,0,3
-python:S905,0,0,0,3,1
-python:S5527,0,0,0,0,4
-python:S3981,0,0,1,0,3
-python:S5632,2,0,0,2,0
-python:S107,0,0,0,0,3
-python:S1751,2,1,0,0,0
-python:S5607,3,0,0,0,0
-python:S5708,0,2,0,1,0
-python:S4143,0,0,0,2,0
-python:S2201,2,0,0,0,0
-python:S5842,0,0,0,0,2
-python:S5707,0,1,0,0,1
-python:S5655,0,0,0,1,0
-python:S3329,0,0,0,0,1
-python:S5747,1,0,0,0,0
-python:S1110,0,1,0,0,0
-python:S6396,0,0,0,0,1
-python:S6468,0,0,0,1,0
-python:S5714,0,1,0,0,0
+python:S1192,1,16,37,8,7
+Regular expressions should not be too complicated,9,5,1,3,8
+Cognitive Complexity of functions should not be too high,0,21,0,1,3
+Unused local variables should be removed,0,2,3,0,2
+python:S3358,0,1,0,0,3
+Functions and methods should not be empty,0,3,0,0,0
+Cryptographic hashes should not be vulnerable,0,0,0,2,0
+Nested blocks of code should not be left empty,0,2,0,0,0
+Unused function parameters should be removed,1,0,1,0,0
+All branches in a conditional structure should not have exactly the same implementation,0,1,0,0,0
+Exception handlers should preserve original exceptions,0,0,1,0,0
+Generic exceptions should never be raised,0,0,1,0,0
+Regular expressions should not always fail,0,0,1,0,0

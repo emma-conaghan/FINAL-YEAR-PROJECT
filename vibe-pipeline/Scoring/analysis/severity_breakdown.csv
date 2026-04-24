@@ -1,6 +1,6 @@
-model,BLOCKER,CRITICAL,MAJOR,MINOR
-chatgpt,36,125,226,72
-claude,51,128,303,227
-claude_opus,7,23,39,22
-copilot,19,85,211,56
-gemini,57,191,538,298
+model,CRITICAL,MAJOR,MINOR
+chatgpt,1,10,0
+claude,40,9,2
+claude_opus,38,4,3
+copilot,11,3,0
+gemini,10,11,2

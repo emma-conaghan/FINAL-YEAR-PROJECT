@@ -1,58 +1,522 @@
-timestamp,model,output_file,status,syntax_valid,notes
-2026-04-09 12:37:33,gemini,Invalid_Outputs/Gemini/2026-04-09_123733_app.py,invalid_python,False,Line 74: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
-2026-04-09 12:37:48,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_123748_app.py,invalid_python,False,Line 195: expected 'except' or 'finally' block
-2026-04-09 12:38:04,claude,Invalid_Outputs/Claude/2026-04-09_123804_app.py,invalid_python,False,Line 44: invalid syntax
-2026-04-09 12:38:15,copilot,Invalid_Outputs/Copilot/2026-04-09_123815_app.py,invalid_python,False,Line 18: invalid syntax
-2026-04-09 12:46:01,gemini,Invalid_Outputs/Gemini/2026-04-09_124601_app.py,invalid_python,False,Line 6795: invalid character '–' (U+2013)
-2026-04-09 12:46:12,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_124612_app.py,invalid_python,False,Line 5: invalid syntax
-2026-04-09 12:46:29,claude,Invalid_Outputs/Claude/2026-04-09_124629_app.py,invalid_python,False,Line 27: invalid syntax
-2026-04-09 12:46:45,copilot,Invalid_Outputs/Copilot/2026-04-09_124645_app.py,invalid_python,False,Line 114: unterminated string literal (detected at line 114)
-2026-04-09 12:52:42,gemini,Outputs/Gemini/2026-04-09_125242_app.py,valid_python,True,pipeline ran ok
-2026-04-09 12:52:51,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_125251_app.py,invalid_python,False,Line 35: invalid syntax
-2026-04-09 12:53:08,claude,Invalid_Outputs/Claude/2026-04-09_125308_app.py,invalid_python,False,Line 27: invalid syntax
-2026-04-09 12:53:18,copilot,Outputs/Copilot/2026-04-09_125318_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:02:31,gemini,Outputs/Gemini/2026-04-09_140231_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:02:41,chatgpt,Outputs/ChatGPT/2026-04-09_140241_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:02:56,claude,Outputs/Claude/2026-04-09_140256_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:03:20,claude_opus,Outputs/Claude_Opus/2026-04-09_140320_app.py,generated_ok,False,Line 27: invalid syntax
-2026-04-09 14:03:32,copilot,Outputs/Copilot/2026-04-09_140332_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:14:38,gemini,Outputs/Gemini/2026-04-09_141438_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:14:47,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_141447_app.py,invalid_python,False,Line 10: invalid syntax
-2026-04-09 14:15:01,claude,Outputs/Claude/2026-04-09_141501_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:15:23,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_141523_app.py,invalid_python,False,Line 54: invalid syntax
-2026-04-09 14:15:37,copilot,Invalid_Outputs/Copilot/2026-04-09_141537_app.py,invalid_python,False,Line 24: invalid syntax
-2026-04-09 14:28:55,gemini,Invalid_Outputs/Gemini/2026-04-09_142855_app.py,invalid_python,False,Line 28: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
-2026-04-09 14:29:02,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_142902_app.py,invalid_python,False,Line 34: invalid syntax
-2026-04-09 14:29:15,claude,Outputs/Claude/2026-04-09_142915_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:29:44,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_142944_app.py,invalid_python,False,Line 46: invalid syntax
-2026-04-09 14:29:58,copilot,Outputs/Copilot/2026-04-09_142958_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:33:39,gemini,Outputs/Gemini/2026-04-09_143339_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:33:46,chatgpt,Outputs/ChatGPT/2026-04-09_143346_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:34:01,claude,Invalid_Outputs/Claude/2026-04-09_143401_app.py,invalid_python,False,Line 78: invalid syntax
-2026-04-09 14:34:25,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_143425_app.py,invalid_python,False,Line 63: invalid syntax
-2026-04-09 14:34:37,copilot,Invalid_Outputs/Copilot/2026-04-09_143437_app.py,invalid_python,False,Line 201: invalid syntax
-2026-04-09 14:42:00,gemini,Outputs/Gemini/2026-04-09_144200_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:42:08,chatgpt,Outputs/ChatGPT/2026-04-09_144208_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:42:25,claude,Invalid_Outputs/Claude/2026-04-09_144225_app.py,invalid_python,False,Line 30: invalid syntax
-2026-04-09 14:42:46,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_144246_app.py,invalid_python,False,Line 53: invalid syntax
-2026-04-09 14:42:57,copilot,Outputs/Copilot/2026-04-09_144257_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:47:57,gemini,Outputs/Gemini/2026-04-09_144757_app.py,valid_python,True,pipeline ran ok
-2026-04-09 14:48:12,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_144812_app.py,invalid_python,False,Line 5: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
-2026-04-09 14:48:26,claude,Invalid_Outputs/Claude/2026-04-09_144826_app.py,invalid_python,False,Line 76: invalid syntax
-2026-04-09 14:48:51,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_144851_app.py,invalid_python,False,Line 45: invalid syntax
-2026-04-09 14:49:10,copilot,Invalid_Outputs/Copilot/2026-04-09_144910_app.py,invalid_python,False,Line 93: invalid syntax
-2026-04-09 15:27:01,gemini,Outputs/Gemini/2026-04-09_152701_app.py,valid_python,True,pipeline ran ok
-2026-04-09 15:27:11,chatgpt,Outputs/ChatGPT/2026-04-09_152711_app.py,valid_python,True,pipeline ran ok
-2026-04-09 15:27:28,claude,Outputs/Claude/2026-04-09_152728_app.py,valid_python,True,pipeline ran ok
-2026-04-09 15:27:53,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_152753_app.py,invalid_python,False,Line 48: invalid syntax
-2026-04-09 15:28:07,copilot,Outputs/Copilot/2026-04-09_152807_app.py,valid_python,True,pipeline ran ok
-2026-04-13 01:56:37,gemini,Outputs/Gemini/2026-04-13_015637_app.py,valid_python,True,pipeline ran ok
-2026-04-13 01:56:44,chatgpt,Outputs/ChatGPT/2026-04-13_015644_app.py,valid_python,True,pipeline ran ok
-2026-04-13 01:56:58,claude,Outputs/Claude/2026-04-13_015658_app.py,valid_python,True,pipeline ran ok
-2026-04-13 01:57:18,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-13_015718_app.py,invalid_python,False,Line 55: invalid syntax
-2026-04-13 01:57:30,copilot,Outputs/Copilot/2026-04-13_015730_app.py,valid_python,True,pipeline ran ok
-2026-04-17 18:36:38,gemini,Invalid_Outputs/Gemini/2026-04-17_183638_app.py,invalid_python,False,Line 61: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
-2026-04-17 18:36:45,chatgpt,Outputs/ChatGPT/2026-04-17_183645_app.py,valid_python,True,pipeline ran ok
-2026-04-17 18:37:00,claude,Outputs/Claude/2026-04-17_183700_app.py,valid_python,True,pipeline ran ok
-2026-04-17 18:37:21,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-17_183721_app.py,invalid_python,False,Line 69: invalid syntax
-2026-04-17 18:37:38,copilot,Outputs/Copilot/2026-04-17_183738_app.py,valid_python,True,pipeline ran ok
+timestamp,prompt_id,prompt_file,model,output_file,status,syntax_valid,notes
+2026-04-23 19:35:34,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_193534_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:35:38,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_193538_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:35:43,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_193543_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:35:48,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_193548_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:21,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_193721_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:24,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_193724_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:27,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_193727_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:33,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_193733_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:36,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-23_193736_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:45,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-23_193745_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:37:49,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-23_193749_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:38:29,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-23_193829_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:39:09,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-23_193909_app.py,invalid_python,False,Line 370: unterminated f-string literal (detected at line 370)
+2026-04-23 19:39:12,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-23_193912_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:39:29,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-23_193929_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:39:46,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-23_193946_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:40:11,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-23_194011_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:40:39,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-23_194039_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:40:47,prompt3,prompt3.txt,copilot,Outputs/Copilot/prompt3/2026-04-23_194047_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:40:59,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-23_194059_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:41:10,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-23_194110_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:41:46,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-23_194146_app.py,invalid_python,False,Line 317: unterminated triple-quoted string literal (detected at line 432)
+2026-04-23 19:42:30,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-23_194230_app.py,invalid_python,False,Line 362: unterminated triple-quoted string literal (detected at line 388)
+2026-04-23 19:42:37,prompt4,prompt4.txt,copilot,Outputs/Copilot/prompt4/2026-04-23_194237_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:42:44,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-23_194244_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:43:34,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-23_194334_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:44:10,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-23_194410_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:44:50,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-23_194450_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:44:55,prompt5,prompt5.txt,copilot,Outputs/Copilot/prompt5/2026-04-23_194455_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:45:05,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-23_194505_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:45:11,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-23_194511_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:45:27,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-23_194527_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:46:00,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-23_194600_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:46:07,prompt6,prompt6.txt,copilot,Outputs/Copilot/prompt6/2026-04-23_194607_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:46:28,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-23_194628_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:46:39,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-23_194639_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:47:09,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-23_194709_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:47:49,prompt7,prompt7.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt7/2026-04-23_194749_app.py,invalid_python,False,Line 366: '(' was never closed
+2026-04-23 19:48:03,prompt7,prompt7.txt,copilot,Outputs/Copilot/prompt7/2026-04-23_194803_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:48:21,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-23_194821_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:48:31,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-23_194831_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:49:01,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-23_194901_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:49:34,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-23_194934_app.py,valid_python,True,pipeline ran ok
+2026-04-23 19:49:40,prompt8,prompt8.txt,copilot,Outputs/Copilot/prompt8/2026-04-23_194940_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:27,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_200227_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:30,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_200230_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:34,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_200234_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:40,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_200240_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:42,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-23_200242_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:50,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-23_200250_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:02:55,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-23_200255_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:03:14,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-23_200314_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:03:55,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-23_200355_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:03:59,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-23_200359_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:04:08,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-23_200408_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:04:26,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-23_200426_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:04:51,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-23_200451_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:05:28,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-23_200528_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:05:37,prompt3,prompt3.txt,copilot,Outputs/Copilot/prompt3/2026-04-23_200537_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:05:53,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-23_200553_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:06:01,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-23_200601_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:06:46,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-23_200646_app.py,invalid_python,False,Line 295: invalid syntax
+2026-04-23 20:07:26,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-23_200726_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:07:36,prompt4,prompt4.txt,copilot,Outputs/Copilot/prompt4/2026-04-23_200736_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:07:47,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-23_200747_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:07:54,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-23_200754_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:08:13,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-23_200813_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:08:52,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-23_200852_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:08:58,prompt5,prompt5.txt,copilot,Outputs/Copilot/prompt5/2026-04-23_200858_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:09:06,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-23_200906_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:09:13,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-23_200913_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:09:38,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-23_200938_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:10:09,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-23_201009_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:10:15,prompt6,prompt6.txt,copilot,Outputs/Copilot/prompt6/2026-04-23_201015_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:10:32,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-23_201032_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:10:45,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-23_201045_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:11:14,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-23_201114_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:11:51,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-23_201151_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:12:04,prompt7,prompt7.txt,copilot,Outputs/Copilot/prompt7/2026-04-23_201204_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:12:40,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-23_201240_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:12:53,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-23_201253_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:13:25,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-23_201325_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:14:03,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-23_201403_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:14:11,prompt8,prompt8.txt,copilot,Outputs/Copilot/prompt8/2026-04-23_201411_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:16:37,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_201637_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:16:40,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_201640_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:16:42,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_201642_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:16:48,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_201648_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:16:50,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-23_201650_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:17:01,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-23_201701_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:17:08,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-23_201708_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:17:45,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-23_201745_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:18:23,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-23_201823_app.py,invalid_python,False,Line 363: '{' was never closed
+2026-04-23 20:18:28,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-23_201828_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:18:48,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-23_201848_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:19:04,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-23_201904_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:19:24,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-23_201924_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:19:56,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-23_201956_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:20:05,prompt3,prompt3.txt,copilot,Outputs/Copilot/prompt3/2026-04-23_202005_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:20:17,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-23_202017_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:20:22,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-23_202022_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:21:01,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-23_202101_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:21:39,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-23_202139_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:21:46,prompt4,prompt4.txt,copilot,Outputs/Copilot/prompt4/2026-04-23_202146_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:21:54,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-23_202154_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:22:00,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-23_202200_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:22:11,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-23_202211_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:22:53,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-23_202253_app.py,invalid_python,False,Line 248: unterminated triple-quoted string literal (detected at line 270)
+2026-04-23 20:22:58,prompt5,prompt5.txt,copilot,Outputs/Copilot/prompt5/2026-04-23_202258_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:23:11,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-23_202311_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:23:19,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-23_202319_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:23:40,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-23_202340_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:24:11,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-23_202411_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:24:17,prompt6,prompt6.txt,copilot,Outputs/Copilot/prompt6/2026-04-23_202417_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:24:34,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-23_202434_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:24:42,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-23_202442_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:25:05,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-23_202505_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:25:46,prompt7,prompt7.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt7/2026-04-23_202546_app.py,invalid_python,False,Line 353: unterminated string literal (detected at line 353)
+2026-04-23 20:25:58,prompt7,prompt7.txt,copilot,Outputs/Copilot/prompt7/2026-04-23_202558_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:26:05,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-23_202605_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:26:15,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-23_202615_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:26:37,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-23_202637_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:27:11,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-23_202711_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:27:18,prompt8,prompt8.txt,copilot,Outputs/Copilot/prompt8/2026-04-23_202718_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:21,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_202921_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:24,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_202924_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:29,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_202929_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:35,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_202935_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:37,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-23_202937_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:46,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-23_202946_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:29:52,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-23_202952_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:30:06,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-23_203006_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:30:46,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-23_203046_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:30:51,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-23_203051_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:31:01,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-23_203101_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:31:14,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-23_203114_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:33:44,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_203344_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:33:48,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_203348_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:33:52,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_203352_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:33:58,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_203358_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:34:00,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-23_203400_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:34:06,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-23_203406_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:34:12,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-23_203412_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:34:40,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-23_203440_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:35:21,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-23_203521_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:35:25,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-23_203525_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:35:42,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-23_203542_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:36:00,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-23_203600_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:36:21,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-23_203621_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:36:53,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-23_203653_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:37:03,prompt3,prompt3.txt,copilot,Outputs/Copilot/prompt3/2026-04-23_203703_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:37:13,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-23_203713_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:37:20,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-23_203720_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:38:05,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-23_203805_app.py,invalid_python,False,Line 233: unterminated triple-quoted string literal (detected at line 401)
+2026-04-23 20:38:45,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-23_203845_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:38:51,prompt4,prompt4.txt,copilot,Outputs/Copilot/prompt4/2026-04-23_203851_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:39:00,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-23_203900_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:39:06,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-23_203906_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:39:13,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-23_203913_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:39:55,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-23_203955_app.py,invalid_python,False,Line 418: '(' was never closed
+2026-04-23 20:40:00,prompt5,prompt5.txt,copilot,Outputs/Copilot/prompt5/2026-04-23_204000_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:40:22,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-23_204022_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:40:27,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-23_204027_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:40:50,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-23_204050_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:41:23,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-23_204123_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:41:27,prompt6,prompt6.txt,copilot,Outputs/Copilot/prompt6/2026-04-23_204127_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:42:09,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-23_204209_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:42:28,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-23_204228_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:42:51,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-23_204251_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:43:26,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-23_204326_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:43:41,prompt7,prompt7.txt,copilot,Outputs/Copilot/prompt7/2026-04-23_204341_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:43:57,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-23_204357_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:44:04,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-23_204404_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:44:45,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-23_204445_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:45:19,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-23_204519_app.py,valid_python,True,pipeline ran ok
+2026-04-23 20:45:25,prompt8,prompt8.txt,copilot,Outputs/Copilot/prompt8/2026-04-23_204525_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:02:50,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_220250_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:02:54,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_220254_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:02:59,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_220259_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:03:05,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_220305_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:03:07,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-23_220307_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:03:21,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-23_220321_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:03:24,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-23_220324_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:03:44,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-23_220344_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:04:24,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-23_220424_app.py,invalid_python,False,Line 307: expected 'except' or 'finally' block
+2026-04-23 22:04:28,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-23_220428_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:04:40,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-23_220440_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:04:49,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-23_220449_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:05:16,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-23_220516_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:05:45,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-23_220545_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:05:54,prompt3,prompt3.txt,copilot,Outputs/Copilot/prompt3/2026-04-23_220554_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:06:03,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-23_220603_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:06:09,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-23_220609_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:06:52,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-23_220652_app.py,invalid_python,False,Line 314: unterminated triple-quoted string literal (detected at line 430)
+2026-04-23 22:07:28,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-23_220728_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:38:17,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_223817_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:38:20,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_223820_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:38:24,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_223824_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:38:31,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_223831_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:40:01,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_224001_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:40:06,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_224006_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:40:11,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_224011_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:40:18,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_224018_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:42:13,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_224213_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:42:16,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_224216_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:42:20,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_224220_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:42:26,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_224226_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:52:17,prompt1,prompt1.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-23 22:52:22,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_225222_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:52:26,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_225226_app.py,valid_python,True,pipeline ran ok
+2026-04-23 22:52:32,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_225232_app.py,valid_python,True,pipeline ran ok
+2026-04-23 23:25:01,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-23_232501_app.py,valid_python,True,pipeline ran ok
+2026-04-23 23:25:04,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-23_232504_app.py,valid_python,True,pipeline ran ok
+2026-04-23 23:25:07,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-23_232507_app.py,valid_python,True,pipeline ran ok
+2026-04-23 23:25:13,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-23_232513_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:32:13,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_033213_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:32:32,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_033232_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:32:53,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_033253_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:33:30,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_033330_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:38:14,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_033814_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:38:31,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_033831_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:39:04,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_033904_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:39:32,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_033932_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:40:50,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_034050_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:41:04,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_034104_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:41:35,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_034135_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:42:10,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_034210_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:43:32,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_034332_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:43:45,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_034345_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:44:05,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_034405_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:44:47,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_034447_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:45:57,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_034557_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:46:12,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_034612_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:46:35,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_034635_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:47:13,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_034713_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:47:14,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 03:47:23,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_034723_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:47:27,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_034727_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:52:31,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_035231_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:52:47,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_035247_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:53:08,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_035308_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:53:52,prompt1,prompt1.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt1/2026-04-24_035352_app.py,invalid_python,False,Line 332: expected an indented block after function definition on line 332
+2026-04-24 03:53:52,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 03:54:02,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_035402_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:54:05,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_035405_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:54:11,prompt2,prompt2.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 529 - {'type': 'error'; 'error': {'type': 'overloaded_error'; 'message': 'Overloaded'}; 'request_id': 'req_011CaMqjxjTWutKWeBYw3WR2'}
+2026-04-24 03:54:42,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_035442_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:54:43,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 03:54:58,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_035458_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:55:17,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_035517_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:55:44,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_035544_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:56:23,prompt3,prompt3.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt3/2026-04-24_035623_app.py,invalid_python,False,Line 294: unterminated triple-quoted string literal (detected at line 297)
+2026-04-24 03:56:23,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 03:56:39,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_035639_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:56:46,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_035646_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:56:53,prompt4,prompt4.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 529 - {'type': 'error'; 'error': {'type': 'overloaded_error'; 'message': 'Overloaded'}; 'request_id': 'req_011CaMqwteybG2sZio6QTkvU'}
+2026-04-24 03:57:32,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_035732_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:57:32,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 03:57:39,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_035739_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:57:46,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_035746_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:57:56,prompt5,prompt5.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 529 - {'type': 'error'; 'error': {'type': 'overloaded_error'; 'message': 'Overloaded'}; 'request_id': 'req_011CaMr2RTjstM7poozduQiK'}
+2026-04-24 03:58:37,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_035837_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:58:38,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 03:59:06,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_035906_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:59:15,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_035915_app.py,valid_python,True,pipeline ran ok
+2026-04-24 03:59:37,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_035937_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:00:06,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_040006_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:00:07,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:00:15,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_040015_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:00:29,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_040029_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:00:58,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_040058_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:01:36,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_040136_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:01:37,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:01:48,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_040148_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:02:01,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_040201_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:02:34,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_040234_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:03:10,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_040310_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:03:11,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:04:19,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_040419_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:04:34,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_040434_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:04:57,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_040457_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:05:28,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_040528_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:05:29,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:05:44,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_040544_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:05:49,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_040549_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:06:04,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_040604_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:06:40,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_040640_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:06:40,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:06:52,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_040652_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:07:13,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_040713_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:07:38,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_040738_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:08:05,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_040805_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:08:06,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:08:12,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_040812_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:08:21,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_040821_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:10:42,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_041042_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:11:17,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_041117_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:11:18,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:11:24,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_041124_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:11:32,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_041132_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:11:55,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_041155_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:12:37,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-24_041237_app.py,invalid_python,False,Line 396: unterminated triple-quoted string literal (detected at line 428)
+2026-04-24 04:12:38,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:12:44,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_041244_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:12:51,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_041251_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:13:11,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_041311_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:13:47,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_041347_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:13:47,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:13:54,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_041354_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:14:06,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_041406_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:14:36,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_041436_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:15:11,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_041511_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:15:12,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:15:28,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_041528_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:15:35,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_041535_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:15:59,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_041559_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:16:32,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_041632_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:16:33,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:16:55,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_041655_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:17:10,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_041710_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:17:45,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_041745_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:18:13,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_041813_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:18:14,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:18:21,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_041821_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:18:25,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_041825_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:18:58,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_041858_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:19:35,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_041935_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:19:36,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:19:47,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_041947_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:20:05,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_042005_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:20:32,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_042032_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:20:58,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_042058_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:20:59,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:21:12,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_042112_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:21:19,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_042119_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:22:04,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_042204_app.py,invalid_python,False,Line 177: unterminated triple-quoted string literal (detected at line 357)
+2026-04-24 04:22:43,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_042243_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:22:43,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:22:57,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_042257_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:23:04,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_042304_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:23:29,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_042329_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:24:06,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_042406_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:24:06,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:24:14,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_042414_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:24:17,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_042417_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:24:39,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_042439_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:25:09,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_042509_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:25:10,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:25:29,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_042529_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:25:43,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_042543_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:26:07,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_042607_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:26:41,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_042641_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:26:42,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:26:46,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 04:26:56,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_042656_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:27:37,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_042737_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:28:09,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_042809_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:28:10,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:30:16,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_043016_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:30:25,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_043025_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:30:45,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_043045_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:31:18,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_043118_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:31:18,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:31:28,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_043128_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:31:32,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_043132_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:31:49,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_043149_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:32:31,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_043231_app.py,invalid_python,False,Line 352: unterminated string literal (detected at line 352)
+2026-04-24 04:32:31,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:32:41,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_043241_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:32:57,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_043257_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:33:22,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_043322_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:33:49,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_043349_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:33:50,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:34:06,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_043406_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:34:14,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_043414_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:34:57,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_043457_app.py,invalid_python,False,Line 253: unterminated triple-quoted string literal (detected at line 399)
+2026-04-24 04:35:41,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_043541_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:35:41,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:35:48,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_043548_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:35:55,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_043555_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:36:11,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_043611_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:36:49,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_043649_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:36:50,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:36:57,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_043657_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:37:01,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_043701_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:37:25,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_043725_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:37:55,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_043755_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:37:56,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:38:10,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_043810_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:38:26,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_043826_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:38:58,prompt7,prompt7.txt,claude,Invalid_Outputs/Claude/prompt7/2026-04-24_043858_app.py,invalid_python,False,Line 390: '(' was never closed
+2026-04-24 04:39:36,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_043936_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:39:36,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:39:47,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_043947_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:39:57,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_043957_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:40:35,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_044035_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:41:11,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_044111_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:41:12,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:41:37,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_044137_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:41:54,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_044154_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:42:19,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_044219_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:42:58,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_044258_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:42:59,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:43:11,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_044311_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:43:14,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_044314_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:43:29,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_044329_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:44:09,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_044409_app.py,invalid_python,False,Line 341: '{' was never closed
+2026-04-24 04:44:10,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:44:25,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_044425_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:44:39,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_044439_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:45:01,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_044501_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:45:30,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_044530_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:45:30,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:45:44,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_044544_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:45:52,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_044552_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:46:33,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_044633_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:47:15,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_044715_app.py,invalid_python,False,Line 384: '(' was never closed
+2026-04-24 04:47:16,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:47:24,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_044724_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:47:29,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_044729_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:47:52,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_044752_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:48:32,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_044832_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:48:32,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:49:09,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_044909_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:49:12,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_044912_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:49:31,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_044931_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:50:07,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_045007_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:50:08,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:50:38,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_045038_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:50:48,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_045048_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:51:13,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_045113_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:51:47,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_045147_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:51:48,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:52:11,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_045211_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:52:22,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_045222_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:52:48,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_045248_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:53:21,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_045321_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:53:22,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:57:24,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_045724_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:57:38,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_045738_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:57:53,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_045753_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:58:28,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_045828_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:58:29,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:58:38,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_045838_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:58:41,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_045841_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:58:57,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_045857_app.py,valid_python,True,pipeline ran ok
+2026-04-24 04:59:36,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_045936_app.py,invalid_python,False,Line 263: '{' was never closed
+2026-04-24 04:59:36,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 04:59:55,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_045955_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:00:07,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_050007_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:00:33,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_050033_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:01:13,prompt3,prompt3.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt3/2026-04-24_050113_app.py,invalid_python,False,Line 310: unterminated string literal (detected at line 310)
+2026-04-24 05:01:14,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:01:35,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_050135_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:01:41,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_050141_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:02:13,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_050213_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:02:49,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_050249_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:02:50,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:03:08,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_050308_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:03:18,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_050318_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:03:31,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_050331_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:04:11,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_050411_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:04:12,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:04:34,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_050434_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:04:39,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_050439_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:05:04,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_050504_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:05:38,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_050538_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:05:38,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:06:12,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_050612_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:06:23,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_050623_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:06:54,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_050654_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:07:33,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_050733_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:07:33,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:07:44,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_050744_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:07:55,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_050755_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:08:28,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_050828_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:09:01,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_050901_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:09:02,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:14:26,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_051426_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:14:40,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_051440_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:14:58,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_051458_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:15:32,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_051532_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:15:33,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:15:40,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_051540_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:15:44,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_051544_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:16:14,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_051614_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:16:56,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_051656_app.py,invalid_python,False,Line 388: invalid syntax
+2026-04-24 05:16:56,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:17:01,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 05:17:18,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_051718_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:17:38,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_051738_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:18:08,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_051808_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:18:08,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:19:00,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 05:19:06,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_051906_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:19:45,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_051945_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:20:28,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_052028_app.py,invalid_python,False,Line 301: unterminated triple-quoted string literal (detected at line 400)
+2026-04-24 05:20:29,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:20:36,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_052036_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:20:44,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_052044_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:20:56,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_052056_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:21:39,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-24_052139_app.py,invalid_python,False,Line 299: unterminated string literal (detected at line 299)
+2026-04-24 05:21:39,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:21:43,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 05:21:48,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_052148_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:22:13,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_052213_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:22:45,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_052245_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:22:46,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:23:37,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_052337_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:23:49,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_052349_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:24:14,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_052414_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:24:48,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_052448_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:24:49,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:25:25,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_052525_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:25:36,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_052536_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:25:58,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_052558_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:26:35,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_052635_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:26:36,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:27:27,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_052727_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:27:44,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_052744_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:28:11,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_052811_app.py,valid_python,True,pipeline ran ok
