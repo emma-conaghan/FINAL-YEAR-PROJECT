@@ -520,3 +520,440 @@ timestamp,prompt_id,prompt_file,model,output_file,status,syntax_valid,notes
 2026-04-24 05:27:27,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_052727_app.py,valid_python,True,pipeline ran ok
 2026-04-24 05:27:44,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_052744_app.py,valid_python,True,pipeline ran ok
 2026-04-24 05:28:11,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_052811_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:28:43,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_052843_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:28:43,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:28:54,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_052854_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:28:58,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_052858_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:29:13,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_052913_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:29:52,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_052952_app.py,invalid_python,False,Line 298: '{' was never closed
+2026-04-24 05:29:53,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:30:33,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_053033_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:30:58,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_053058_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:31:19,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_053119_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:31:48,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_053148_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:31:49,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:32:26,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_053226_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:32:33,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_053233_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:33:13,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_053313_app.py,invalid_python,False,Line 245: unterminated triple-quoted string literal (detected at line 413)
+2026-04-24 05:33:58,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_053358_app.py,invalid_python,False,Line 385: unterminated triple-quoted string literal (detected at line 405)
+2026-04-24 05:33:58,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:34:07,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_053407_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:34:13,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_053413_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:34:52,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_053452_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:35:29,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_053529_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:35:30,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:35:54,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 05:35:59,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_053559_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:36:21,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_053621_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:36:54,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_053654_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:36:54,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:37:21,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_053721_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:37:31,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_053731_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:37:55,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_053755_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:38:35,prompt7,prompt7.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt7/2026-04-24_053835_app.py,invalid_python,False,Line 361: '(' was never closed
+2026-04-24 05:38:36,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 05:38:55,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_053855_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:39:07,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_053907_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:39:39,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_053939_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:40:11,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_054011_app.py,valid_python,True,pipeline ran ok
+2026-04-24 05:40:11,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 11:57:55,prompt1,prompt1.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 11:58:24,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_115824_app.py,valid_python,True,pipeline ran ok
+2026-04-24 11:58:45,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_115845_app.py,valid_python,True,pipeline ran ok
+2026-04-24 11:59:20,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_115920_app.py,valid_python,True,pipeline ran ok
+2026-04-24 11:59:20,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 11:59:21,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 11:59:26,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_115926_app.py,valid_python,True,pipeline ran ok
+2026-04-24 11:59:42,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_115942_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:00:23,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_120023_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:00:23,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:00:24,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:00:43,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_120043_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:00:43,prompt3,prompt3.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUqvCtFoM6LZqJ81UVe'}
+2026-04-24 12:00:44,prompt3,prompt3.txt,claude_opus,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUqwiAew1cGj5JfZWhc'}
+2026-04-24 12:00:44,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:00:45,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:00:53,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_120053_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:00:53,prompt4,prompt4.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUrdT6JrKTRGDqFfpNy'}
+2026-04-24 12:00:53,prompt4,prompt4.txt,claude_opus,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUred3DSAm6Dy4xZs2a'}
+2026-04-24 12:00:54,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:01:03,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_120103_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:01:11,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_120111_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:01:11,prompt5,prompt5.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUsyZMN5feTcsz3uo3C'}
+2026-04-24 12:01:11,prompt5,prompt5.txt,claude_opus,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUsziYsERsePHjmtEFU'}
+2026-04-24 12:01:12,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:01:13,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:01:21,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_120121_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:01:22,prompt6,prompt6.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUtkDwRbYvsgk4vapUi'}
+2026-04-24 12:01:22,prompt6,prompt6.txt,claude_opus,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUtmBz7rXNxZB2znWXa'}
+2026-04-24 12:01:22,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:01:31,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:01:49,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_120149_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:01:49,prompt7,prompt7.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUvngqFmYCgJ1cxWcjr'}
+2026-04-24 12:01:49,prompt7,prompt7.txt,claude_opus,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUvofryZ75EmKRTuewB'}
+2026-04-24 12:01:50,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:01:57,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:02:09,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_120209_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:02:10,prompt8,prompt8.txt,claude,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUxH3vem5dnYidNX9rf'}
+2026-04-24 12:02:10,prompt8,prompt8.txt,claude_opus,N/A,generation_failed,False,Claude request failed: Error code: 400 - {'type': 'error'; 'error': {'type': 'invalid_request_error'; 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}; 'request_id': 'req_011CaNUxJTWGurVtZgHVmEQi'}
+2026-04-24 12:02:10,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:46:23,prompt1,prompt1.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:47:05,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_124705_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:47:30,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_124730_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:48:06,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_124806_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:48:07,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:48:08,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:48:14,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_124814_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:48:32,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_124832_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:49:10,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_124910_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:49:10,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:49:15,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:49:26,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_124926_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:49:51,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_124951_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:50:24,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_125024_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:50:25,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:50:26,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:50:29,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_125029_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:51:12,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_125112_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:51:56,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_125156_app.py,invalid_python,False,Line 377: expected an indented block after 'if' statement on line 377
+2026-04-24 12:51:57,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:52:02,prompt5,prompt5.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:52:10,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_125210_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:52:28,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_125228_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:53:09,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-24_125309_app.py,invalid_python,False,Line 417: '(' was never closed
+2026-04-24 12:53:10,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:53:51,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:53:56,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_125356_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:54:16,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_125416_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:54:48,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_125448_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:54:48,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:55:53,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_125553_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:56:14,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_125614_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:56:46,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_125646_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:57:24,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_125724_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:57:24,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 12:57:25,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 12:57:36,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_125736_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:58:10,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_125810_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:58:44,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_125844_app.py,valid_python,True,pipeline ran ok
+2026-04-24 12:58:44,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:23:34,prompt1,prompt1.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:23:52,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_132352_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:24:17,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_132417_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:24:57,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_132457_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:24:57,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:25:11,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_132511_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:25:15,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_132515_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:25:31,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_132531_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:26:11,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_132611_app.py,invalid_python,False,Line 303: '{' was never closed
+2026-04-24 13:26:11,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:26:26,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_132626_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:26:41,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_132641_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:26:58,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_132658_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:27:25,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_132725_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:27:26,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:27:27,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:27:34,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_132734_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:28:08,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_132808_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:28:52,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_132852_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:28:53,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:29:47,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_132947_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:29:53,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_132953_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:30:06,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_133006_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:30:43,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_133043_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:30:44,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:31:16,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_133116_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:31:24,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_133124_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:31:44,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_133144_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:32:17,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_133217_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:32:18,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:32:21,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:32:34,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_133234_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:33:02,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_133302_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:33:43,prompt7,prompt7.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt7/2026-04-24_133343_app.py,invalid_python,False,Line 338: '(' was never closed
+2026-04-24 13:33:43,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:33:44,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:33:57,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_133357_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:34:29,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_133429_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:35:06,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_133506_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:35:07,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:54:10,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_135410_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:54:24,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_135424_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:54:55,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_135455_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:55:39,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_135538_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:55:39,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:55:40,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:55:44,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_135544_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:55:57,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_135557_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:56:38,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_135638_app.py,invalid_python,False,Line 304: unterminated string literal (detected at line 304)
+2026-04-24 13:56:39,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:56:42,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:57:02,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_135702_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:57:37,prompt3,prompt3.txt,claude,Invalid_Outputs/Claude/prompt3/2026-04-24_135737_app.py,invalid_python,False,Line 329: invalid syntax
+2026-04-24 13:58:04,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_135804_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:58:05,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 13:58:08,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 13:58:19,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_135819_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:59:00,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_135900_app.py,valid_python,True,pipeline ran ok
+2026-04-24 13:59:44,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_135944_app.py,invalid_python,False,Line 370: unterminated triple-quoted string literal (detected at line 405)
+2026-04-24 13:59:44,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:00:11,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_140011_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:00:17,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_140017_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:00:32,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_140032_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:01:12,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_140112_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:01:13,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:01:14,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:01:21,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_140121_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:01:40,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_140140_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:02:11,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_140211_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:02:11,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:03:22,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_140322_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:03:36,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_140336_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:04:00,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_140400_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:04:35,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_140435_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:04:36,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:04:51,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_140451_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:05:05,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_140505_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:05:38,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_140538_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:06:16,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_140616_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:06:16,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:14:35,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_141435_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:14:50,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_141450_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:15:12,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_141512_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:15:43,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_141543_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:15:44,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:17:38,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_141738_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:17:43,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_141743_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:18:00,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_141800_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:18:36,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_141836_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:18:37,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:19:07,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_141907_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:19:29,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_141929_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:19:50,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_141950_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:20:24,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_142024_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:20:24,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:20:26,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:20:44,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_142044_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:21:17,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_142117_app.py,invalid_python,False,Line 303: unterminated triple-quoted string literal (detected at line 441)
+2026-04-24 14:21:56,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_142156_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:21:56,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:22:25,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_142225_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:22:35,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_142235_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:22:42,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_142242_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:23:24,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_142324_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:23:25,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:23:49,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_142349_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:23:54,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_142354_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:24:16,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_142416_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:24:50,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_142450_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:24:51,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:24:51,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:25:09,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_142509_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:25:34,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_142534_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:26:16,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_142616_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:26:16,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:26:39,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:26:50,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_142650_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:27:17,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_142717_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:27:55,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_142755_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:27:56,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:33:09,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_143309_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:33:25,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_143325_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:33:51,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_143351_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:34:23,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_143423_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:34:24,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:34:24,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:34:33,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_143433_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:35:12,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_143512_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:35:53,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_143553_app.py,invalid_python,False,Line 346: '{' was never closed
+2026-04-24 14:35:54,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:35:55,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:36:11,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_143611_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:36:33,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_143633_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:37:03,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_143703_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:37:03,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:37:05,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:37:11,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_143711_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:37:53,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_143753_app.py,invalid_python,False,Line 271: unterminated triple-quoted string literal (detected at line 442)
+2026-04-24 14:38:37,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_143837_app.py,invalid_python,False,Line 88: unterminated triple-quoted string literal (detected at line 411)
+2026-04-24 14:38:38,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:39:26,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_143926_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:39:35,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_143935_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:39:54,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_143954_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:40:35,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_144035_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:40:35,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:40:36,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:40:42,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_144042_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:41:06,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_144106_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:41:36,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_144136_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:41:37,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:41:50,prompt7,prompt7.txt,gemini,Outputs/Gemini/prompt7/2026-04-24_144150_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:42:02,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_144202_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:42:33,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_144233_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:43:13,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_144313_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:43:14,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:43:34,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:43:53,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_144353_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:44:29,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_144429_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:45:01,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_144501_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:45:02,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:56:33,prompt1,prompt1.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:56:50,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_145650_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:57:23,prompt1,prompt1.txt,claude,Invalid_Outputs/Claude/prompt1/2026-04-24_145723_app.py,invalid_python,False,Line 372: unterminated string literal (detected at line 372)
+2026-04-24 14:57:55,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_145755_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:57:56,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 14:57:57,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 14:58:04,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_145804_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:58:18,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_145818_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:59:00,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_145900_app.py,valid_python,True,pipeline ran ok
+2026-04-24 14:59:00,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:00:15,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_150015_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:00:40,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_150040_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:01:09,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_150109_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:01:50,prompt3,prompt3.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt3/2026-04-24_150150_app.py,invalid_python,False,Line 394: '(' was never closed
+2026-04-24 15:01:50,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:01:53,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:02:04,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_150204_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:02:41,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_150241_app.py,invalid_python,False,Line 250: unterminated triple-quoted string literal (detected at line 377)
+2026-04-24 15:03:26,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_150326_app.py,invalid_python,False,Line 391: '[' was never closed
+2026-04-24 15:03:26,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:03:56,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_150356_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:04:02,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_150402_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:04:16,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_150416_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:04:57,prompt5,prompt5.txt,claude_opus,Outputs/Claude_Opus/prompt5/2026-04-24_150457_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:04:58,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:08:02,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_150802_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:08:09,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_150809_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:08:32,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_150832_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:09:07,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_150907_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:09:08,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:09:09,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:09:23,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_150923_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:09:49,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_150949_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:10:27,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_151027_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:10:28,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:11:33,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_151133_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:11:42,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_151142_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:12:22,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_151222_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:12:55,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_151255_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:12:56,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:13:15,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_151315_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:13:33,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_151333_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:14:06,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_151406_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:14:42,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_151442_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:14:42,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:15:20,prompt2,prompt2.txt,gemini,Outputs/Gemini/prompt2/2026-04-24_151520_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:15:25,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_151525_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:15:41,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_151541_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:16:20,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_151620_app.py,invalid_python,False,Line 364: unterminated string literal (detected at line 364)
+2026-04-24 15:16:21,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:17:47,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:18:01,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_151801_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:18:23,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_151823_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:19:05,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_151905_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:19:06,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:20:29,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:20:37,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_152037_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:21:12,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_152112_app.py,invalid_python,False,Line 258: unterminated triple-quoted string literal (detected at line 436)
+2026-04-24 15:21:57,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_152157_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:21:58,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:21:58,prompt5,prompt5.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:22:06,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_152206_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:22:21,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_152221_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:23:04,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-24_152304_app.py,invalid_python,False,Line 241: '{' was never closed
+2026-04-24 15:23:04,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:23:33,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:23:37,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_152337_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:23:57,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_152357_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:24:34,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_152434_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:24:35,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:24:36,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:24:47,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_152447_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:25:10,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_152510_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:43:20,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_154320_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:43:20,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:43:22,prompt8,prompt8.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:43:40,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_154340_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:44:22,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_154422_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:44:54,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_154454_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:44:55,prompt8,prompt8.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:49:36,prompt1,prompt1.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:49:57,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_154957_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:50:21,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_155021_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:50:52,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_155052_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:50:53,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:51:02,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:51:05,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_155105_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:51:20,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_155120_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:52:02,prompt2,prompt2.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt2/2026-04-24_155202_app.py,invalid_python,False,Line 333: unterminated string literal (detected at line 333)
+2026-04-24 15:52:03,prompt2,prompt2.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:52:04,prompt3,prompt3.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:52:23,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_155223_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:52:50,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_155250_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:53:17,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_155317_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:53:18,prompt3,prompt3.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:53:20,prompt4,prompt4.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:53:27,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_155327_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:53:57,prompt4,prompt4.txt,claude,Outputs/Claude/prompt4/2026-04-24_155357_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:54:41,prompt4,prompt4.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt4/2026-04-24_155441_app.py,invalid_python,False,Line 394: unterminated triple-quoted string literal (detected at line 403)
+2026-04-24 15:54:41,prompt4,prompt4.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:54:49,prompt5,prompt5.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:54:56,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_155456_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:55:13,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_155513_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:55:56,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-24_155556_app.py,invalid_python,False,Line 305: unterminated string literal (detected at line 305)
+2026-04-24 15:55:57,prompt5,prompt5.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:55:58,prompt6,prompt6.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:56:03,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_155603_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:56:20,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_155620_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:56:57,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_155657_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:56:58,prompt6,prompt6.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 15:57:28,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 15:57:44,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_155744_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:58:16,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_155816_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:58:57,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_155857_app.py,valid_python,True,pipeline ran ok
+2026-04-24 15:58:57,prompt7,prompt7.txt,copilot,N/A,generation_failed,False,GitHub Models request failed: 429 Client Error: Too Many Requests for url: https://models.github.ai/inference/chat/completions
+2026-04-24 21:25:44,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_212544_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:25:59,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_212559_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:26:29,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_212629_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:27:04,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_212704_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:27:09,prompt1,prompt1.txt,copilot,N/A,generation_failed,False,
+2026-04-24 21:32:21,prompt1,prompt1.txt,gemini,Outputs/Gemini/prompt1/2026-04-24_213221_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:32:38,prompt1,prompt1.txt,chatgpt,Outputs/ChatGPT/prompt1/2026-04-24_213238_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:33:00,prompt1,prompt1.txt,claude,Outputs/Claude/prompt1/2026-04-24_213300_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:33:38,prompt1,prompt1.txt,claude_opus,Outputs/Claude_Opus/prompt1/2026-04-24_213338_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:33:45,prompt1,prompt1.txt,copilot,Outputs/Copilot/prompt1/2026-04-24_213345_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:33:47,prompt2,prompt2.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 21:33:53,prompt2,prompt2.txt,chatgpt,Outputs/ChatGPT/prompt2/2026-04-24_213353_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:34:07,prompt2,prompt2.txt,claude,Outputs/Claude/prompt2/2026-04-24_213407_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:34:46,prompt2,prompt2.txt,claude_opus,Outputs/Claude_Opus/prompt2/2026-04-24_213446_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:34:51,prompt2,prompt2.txt,copilot,Outputs/Copilot/prompt2/2026-04-24_213451_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:34:59,prompt3,prompt3.txt,gemini,Outputs/Gemini/prompt3/2026-04-24_213459_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:35:12,prompt3,prompt3.txt,chatgpt,Outputs/ChatGPT/prompt3/2026-04-24_213512_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:35:32,prompt3,prompt3.txt,claude,Outputs/Claude/prompt3/2026-04-24_213532_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:35:59,prompt3,prompt3.txt,claude_opus,Outputs/Claude_Opus/prompt3/2026-04-24_213559_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:36:09,prompt3,prompt3.txt,copilot,Outputs/Copilot/prompt3/2026-04-24_213609_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:36:35,prompt4,prompt4.txt,gemini,Outputs/Gemini/prompt4/2026-04-24_213635_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:36:56,prompt4,prompt4.txt,chatgpt,Outputs/ChatGPT/prompt4/2026-04-24_213656_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:37:38,prompt4,prompt4.txt,claude,Invalid_Outputs/Claude/prompt4/2026-04-24_213738_app.py,invalid_python,False,Line 282: unterminated triple-quoted string literal (detected at line 447)
+2026-04-24 21:38:15,prompt4,prompt4.txt,claude_opus,Outputs/Claude_Opus/prompt4/2026-04-24_213815_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:38:22,prompt4,prompt4.txt,copilot,Outputs/Copilot/prompt4/2026-04-24_213822_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:38:38,prompt5,prompt5.txt,gemini,Outputs/Gemini/prompt5/2026-04-24_213838_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:38:41,prompt5,prompt5.txt,chatgpt,Outputs/ChatGPT/prompt5/2026-04-24_213841_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:39:10,prompt5,prompt5.txt,claude,Outputs/Claude/prompt5/2026-04-24_213910_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:39:53,prompt5,prompt5.txt,claude_opus,Invalid_Outputs/Claude_Opus/prompt5/2026-04-24_213953_app.py,invalid_python,False,Line 270: invalid syntax
+2026-04-24 21:39:59,prompt5,prompt5.txt,copilot,Outputs/Copilot/prompt5/2026-04-24_213959_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:40:21,prompt6,prompt6.txt,gemini,Outputs/Gemini/prompt6/2026-04-24_214021_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:40:25,prompt6,prompt6.txt,chatgpt,Outputs/ChatGPT/prompt6/2026-04-24_214025_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:40:45,prompt6,prompt6.txt,claude,Outputs/Claude/prompt6/2026-04-24_214045_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:41:22,prompt6,prompt6.txt,claude_opus,Outputs/Claude_Opus/prompt6/2026-04-24_214122_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:41:27,prompt6,prompt6.txt,copilot,Outputs/Copilot/prompt6/2026-04-24_214127_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:41:43,prompt7,prompt7.txt,gemini,N/A,generation_failed,False,503 UNAVAILABLE. {'error': {'code': 503; 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.'; 'status': 'UNAVAILABLE'}}
+2026-04-24 21:41:53,prompt7,prompt7.txt,chatgpt,Outputs/ChatGPT/prompt7/2026-04-24_214153_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:42:17,prompt7,prompt7.txt,claude,Outputs/Claude/prompt7/2026-04-24_214217_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:42:51,prompt7,prompt7.txt,claude_opus,Outputs/Claude_Opus/prompt7/2026-04-24_214251_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:43:01,prompt7,prompt7.txt,copilot,Outputs/Copilot/prompt7/2026-04-24_214301_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:43:28,prompt8,prompt8.txt,gemini,Outputs/Gemini/prompt8/2026-04-24_214328_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:43:35,prompt8,prompt8.txt,chatgpt,Outputs/ChatGPT/prompt8/2026-04-24_214335_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:44:01,prompt8,prompt8.txt,claude,Outputs/Claude/prompt8/2026-04-24_214401_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:44:38,prompt8,prompt8.txt,claude_opus,Outputs/Claude_Opus/prompt8/2026-04-24_214438_app.py,valid_python,True,pipeline ran ok
+2026-04-24 21:44:45,prompt8,prompt8.txt,copilot,Outputs/Copilot/prompt8/2026-04-24_214445_app.py,valid_python,True,pipeline ran ok
