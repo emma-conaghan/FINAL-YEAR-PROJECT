@@ -1,4 +1,4 @@
-PROMPT_FILE = "Prompts/prompt.txt"
+PROMPTS_DIR = "Prompts"
 SCORESHEET = "Scoring/scoresheet.csv"
 
 PROJECT_KEY = "vibe-pipeline-multi"

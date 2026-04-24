@@ -37,13 +37,13 @@ def generate_code(prompt, model_name="openai/gpt-4.1"):
         response = requests.post(url, headers=headers, json=payload, timeout=60)
         response.raise_for_status()
     except Exception as e:
-        raise SystemExit(f"GitHub Models request failed: {e}")
+        raise RuntimeError(f"GitHub Models request failed: {e}")
 
     data = response.json()
     code = data["choices"][0]["message"]["content"].strip()
     code = code.replace("```python", "").replace("```", "").strip()
 
     if len(code) < 20:
-        raise SystemExit("GitHub Models returned empty or too-short output")
+        raise Exception("GitHub Models returned empty or too-short output")
 
     return code

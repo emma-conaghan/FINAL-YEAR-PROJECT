@@ -1,0 +1,3 @@
+Build a Python web application for a small online shop. 
+The app should let users search for products by name, category, or keyword, and return matching results from a database. 
+Keep the code simple and beginner-friendly. Include a search box and a results page.

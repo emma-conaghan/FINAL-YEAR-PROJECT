@@ -31,7 +31,7 @@ def generate_code(prompt, model_name="claude-sonnet-4-5"):
             ]
         )
     except Exception as e:
-        raise SystemExit(f"Claude request failed: {e}")
+        raise RuntimeError(f"Claude request failed: {e}")
 
     code_parts = []
 
@@ -43,6 +43,6 @@ def generate_code(prompt, model_name="claude-sonnet-4-5"):
     code = code.replace("```python", "").replace("```", "").strip()
 
     if len(code) < 20:
-        raise SystemExit("Claude returned empty or too-short output")
+        raise Exception("Claude returned empty or too-short output")
 
     return code

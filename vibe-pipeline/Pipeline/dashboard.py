@@ -8,9 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------------------------
 # FILE PATHS
-# ---------------------------
 SCORESHEET = "Scoring/scoresheet.csv"
 SONAR_ISSUES = "Scoring/sonar_issues.csv"
 ANALYSIS_DIR = "Scoring/analysis"
@@ -22,17 +20,15 @@ COMBINED_METRICS = os.path.join(ANALYSIS_DIR, "combined_metrics.csv")
 ISSUE_TYPE_TABLE = os.path.join(ANALYSIS_DIR, "issue_type_vs_model.csv")
 
 
-# ---------------------------
 # HELPERS
-# ---------------------------
-@st.cache_data
+#@st.cache_data
 def load_csv(path):
     return pd.read_csv(path)
 
 
 def safe_load(path, name):
     if not os.path.exists(path):
-        st.error(f"{name} not found")
+        st.error(f"{name} not found.")
         st.stop()
     return load_csv(path)
 
@@ -40,7 +36,7 @@ def safe_load(path, name):
 def clean_columns(df, first_col_name=None):
     df.columns = df.columns.str.strip()
 
-    if len(df.columns) > 0 and df.columns[0].startswith("Unnamed"):
+    if len(df.columns) > 0 and str(df.columns[0]).startswith("Unnamed"):
         if first_col_name:
             df.rename(columns={df.columns[0]: first_col_name}, inplace=True)
         else:
@@ -52,23 +48,45 @@ def clean_columns(df, first_col_name=None):
 def get_model_row(df, selected_model):
     if "model" not in df.columns:
         return None
+
     rows = df[df["model"] == selected_model]
     if rows.empty:
         return None
+
     return rows.iloc[0]
 
 
-def classify_score(score):
+def classify_good_high(score):
+    """
+    Use when a higher score is better.
+    Example: validity.
+    """
     if score >= 80:
-        return "#0CCE6B"
+        return "#0CCE6B"   # green
     if score >= 50:
-        return "#FFA400"
-    return "#FF4E42"
+        return "#FFA400"   # amber
+    return "#FF4E42"       # red
 
 
-def make_score_circle(label, score, raw_text):
+def classify_bad_high(score):
+    """
+    Use when a higher score is worse.
+    Example: issue density, total issues.
+    """
+    if score >= 80:
+        return "#FF4E42"   # red
+    if score >= 50:
+        return "#FFA400"   # amber
+    return "#0CCE6B"       # green
+
+
+def make_score_circle(label, score, raw_text, high_is_good=True):
     score = max(0, min(100, int(round(score))))
-    colour = classify_score(score)
+
+    if high_is_good:
+        colour = classify_good_high(score)
+    else:
+        colour = classify_bad_high(score)
 
     return f"""
     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px 0;">
@@ -116,18 +134,31 @@ def build_takeaway_text(model_name, validity_rate, issues_per_valid_file, total_
     )
 
 
-# ---------------------------
+def normalise_against_max(value, max_value):
+    """
+    Convert a raw metric into a 0-100 relative score against the worst value observed.
+    For issue-based metrics, this means:
+    - lower raw value -> lower score -> greener
+    - higher raw value -> higher score -> redder
+    """
+    if pd.isna(max_value) or max_value == 0:
+        return 0
+    return max(0, min(100, 100 * (value / max_value)))
+
+
 # LOAD DATA
-# ---------------------------
 scores_df = clean_columns(safe_load(SCORESHEET, "scoresheet.csv"))
 sonar_df = clean_columns(safe_load(SONAR_ISSUES, "sonar_issues.csv"))
 syntax_summary_df = clean_columns(safe_load(SYNTAX_SUMMARY, "syntax_summary.csv"))
 issue_counts_df = clean_columns(safe_load(ISSUE_COUNTS, "issue_counts.csv"))
 severity_breakdown_df = clean_columns(safe_load(SEVERITY_BREAKDOWN, "severity_breakdown.csv"))
 combined_metrics_df = clean_columns(safe_load(COMBINED_METRICS, "combined_metrics.csv"))
-issue_type_table_df = clean_columns(safe_load(ISSUE_TYPE_TABLE, "issue_type_vs_model.csv"), first_col_name="issue_name")
+issue_type_table_df = clean_columns(
+    safe_load(ISSUE_TYPE_TABLE, "issue_type_vs_model.csv"),
+    first_col_name="issue_name"
+)
 
-# Fix syntax_valid booleans if present
+# BASIC DATA CLEAN-UP
 if "syntax_valid" in scores_df.columns:
     scores_df["syntax_valid"] = (
         scores_df["syntax_valid"]
@@ -137,7 +168,6 @@ if "syntax_valid" in scores_df.columns:
         .map({"true": True, "false": False})
     )
 
-# Ensure model column exists
 for df in [syntax_summary_df, issue_counts_df, severity_breakdown_df, combined_metrics_df]:
     if "model" not in df.columns and len(df.columns) > 0:
         df.rename(columns={df.columns[0]: "model"}, inplace=True)
@@ -146,16 +176,12 @@ if "issue_name" not in issue_type_table_df.columns and len(issue_type_table_df.c
     issue_type_table_df.rename(columns={issue_type_table_df.columns[0]: "issue_name"}, inplace=True)
 
 
-# ---------------------------
 # PAGE HEADER
-# ---------------------------
 st.title("LLM Code Evaluation Dashboard")
 st.caption("Comparison of syntax validity and static analysis findings for LLM-generated Python code.")
 
-
-# ---------------------------
 # SIDEBAR
-# ---------------------------
+
 available_models = sorted(scores_df["model"].dropna().unique().tolist()) if "model" in scores_df.columns else []
 
 if not available_models:
@@ -180,24 +206,30 @@ if not comparison_models:
     comparison_models = available_models
 
 
-# ---------------------------
 # FILTER DATA
-# ---------------------------
 filtered_combined_df = combined_metrics_df.copy()
 if "model" in filtered_combined_df.columns:
-    filtered_combined_df = filtered_combined_df[filtered_combined_df["model"].isin(comparison_models)]
+    filtered_combined_df = filtered_combined_df[
+        filtered_combined_df["model"].isin(comparison_models)
+    ]
 
 filtered_sonar_df = sonar_df.copy()
 if "model" in filtered_sonar_df.columns:
-    filtered_sonar_df = filtered_sonar_df[filtered_sonar_df["model"] == selected_model]
+    filtered_sonar_df = filtered_sonar_df[
+        filtered_sonar_df["model"] == selected_model
+    ]
 
 filtered_severity_df = severity_breakdown_df.copy()
 if "model" in filtered_severity_df.columns:
-    filtered_severity_df = filtered_severity_df[filtered_severity_df["model"] == selected_model]
+    filtered_severity_df = filtered_severity_df[
+        filtered_severity_df["model"] == selected_model
+    ]
 
 filtered_issue_counts_df = issue_counts_df.copy()
 if "model" in filtered_issue_counts_df.columns:
-    filtered_issue_counts_df = filtered_issue_counts_df[filtered_issue_counts_df["model"] == selected_model]
+    filtered_issue_counts_df = filtered_issue_counts_df[
+        filtered_issue_counts_df["model"] == selected_model
+    ]
 
 filtered_issue_type_df = issue_type_table_df.copy()
 if "issue_name" in filtered_issue_type_df.columns:
@@ -205,9 +237,7 @@ if "issue_name" in filtered_issue_type_df.columns:
     filtered_issue_type_df = filtered_issue_type_df[keep_cols]
 
 
-# ---------------------------
 # FOCUS MODEL METRICS
-# ---------------------------
 focus_combined_row = get_model_row(combined_metrics_df, selected_model)
 focus_syntax_row = get_model_row(syntax_summary_df, selected_model)
 
@@ -224,12 +254,26 @@ if focus_combined_row is not None:
 if focus_syntax_row is not None and "invalid_files" in focus_syntax_row.index:
     invalid_outputs = int(focus_syntax_row.get("invalid_files", 0))
 
-# ---------------------------
-# LIGHTHOUSE-STYLE SCORES
-# Higher score = better for all circles
-# ---------------------------
-max_issue_density = combined_metrics_df["issues_per_valid_file"].max() if "issues_per_valid_file" in combined_metrics_df.columns else 1
-max_total_issues = combined_metrics_df["issue_count"].max() if "issue_count" in combined_metrics_df.columns else 1
+
+# SCORE CALCULATION
+# Valid Outputs:
+# - already naturally a percentage
+# - higher = better
+
+# Issue Density / Total Issues:
+# - normalised against the worst observed model
+# - higher = worse
+max_issue_density = (
+    combined_metrics_df["issues_per_valid_file"].max()
+    if "issues_per_valid_file" in combined_metrics_df.columns
+    else 1
+)
+
+max_total_issues = (
+    combined_metrics_df["issue_count"].max()
+    if "issue_count" in combined_metrics_df.columns
+    else 1
+)
 
 if pd.isna(max_issue_density) or max_issue_density == 0:
     max_issue_density = 1
@@ -238,12 +282,11 @@ if pd.isna(max_total_issues) or max_total_issues == 0:
     max_total_issues = 1
 
 valid_outputs_score = validity_rate
-issues_per_file_score = max(0, 100 * (1 - (issues_per_valid_file / max_issue_density)))
-total_issues_score = max(0, 100 * (1 - (total_issues_model / max_total_issues)))
+issue_density_score = normalise_against_max(issues_per_valid_file, max_issue_density)
+total_issues_score = normalise_against_max(total_issues_model, max_total_issues)
 
-# ---------------------------
+
 # HERO SECTION
-# ---------------------------
 st.subheader(f"Focus Model: {selected_model}")
 
 c1, c2, c3 = st.columns(3)
@@ -253,7 +296,8 @@ with c1:
         make_score_circle(
             "Valid Outputs",
             valid_outputs_score,
-            f"{validity_rate:.1f}% valid outputs"
+            f"{validity_rate:.1f}% valid outputs",
+            high_is_good=True
         ),
         unsafe_allow_html=True
     )
@@ -261,9 +305,10 @@ with c1:
 with c2:
     st.markdown(
         make_score_circle(
-            "Issues per Valid File",
-            issues_per_file_score,
-            f"{issues_per_valid_file:.2f} issues per valid file"
+            "Issue Density",
+            issue_density_score,
+            f"{issues_per_valid_file:.2f} issues per valid file",
+            high_is_good=False
         ),
         unsafe_allow_html=True
     )
@@ -273,13 +318,18 @@ with c3:
         make_score_circle(
             "Total Issues",
             total_issues_score,
-            f"{total_issues_model} total issues"
+            f"{total_issues_model} total issues",
+            high_is_good=False
         ),
         unsafe_allow_html=True
     )
 
 st.markdown(
-    "<div style='text-align:center; color:#5f6368; font-size:14px; margin-bottom:18px;'>Higher scores indicate better relative performance across the evaluated models.</div>",
+    """
+    <div style='text-align:center; color:#5f6368; font-size:14px; margin-bottom:18px;'>
+        For Valid Outputs, higher is better. For issue-based metrics, higher is worse.
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
@@ -288,9 +338,7 @@ st.info(build_takeaway_text(selected_model, validity_rate, issues_per_valid_file
 st.divider()
 
 
-# ---------------------------
 # TABS
-# ---------------------------
 tab1, tab2, tab3 = st.tabs([
     "Overview",
     "Severity Breakdown",
@@ -298,9 +346,7 @@ tab1, tab2, tab3 = st.tabs([
 ])
 
 
-# ---------------------------
 # TAB 1: OVERVIEW
-# ---------------------------
 with tab1:
     st.subheader("Model Comparison")
 
@@ -322,7 +368,7 @@ with tab1:
         plot_df = filtered_combined_df[["model", "issues_per_valid_file"]].copy()
         plot_df["metric_value"] = plot_df["issues_per_valid_file"]
         ylabel = "Issues per Valid File"
-        title = "Issues per Valid File by Model"
+        title = "Issue Density by Model"
 
     else:
         plot_df = filtered_combined_df[["model", "issue_count"]].copy()
@@ -330,7 +376,11 @@ with tab1:
         ylabel = "Issue Count"
         title = "Total Issues by Model"
 
-    bar_colours = ["#1f77b4" if model != selected_model else "#0CCE6B" for model in plot_df["model"]]
+    bar_colours = [
+        "#0CCE6B" if model == selected_model else "#1f77b4"
+        for model in plot_df["model"]
+    ]
+
     ax.bar(plot_df["model"], plot_df["metric_value"], color=bar_colours)
     ax.set_ylabel(ylabel)
     ax.set_title(title)
@@ -342,9 +392,7 @@ with tab1:
     st.dataframe(filtered_combined_df, use_container_width=True, height=250)
 
 
-# ---------------------------
 # TAB 2: SEVERITY BREAKDOWN
-# ---------------------------
 with tab2:
     st.subheader(f"Severity Breakdown for {selected_model}")
 
@@ -368,6 +416,10 @@ with tab2:
             plt.xticks(rotation=45)
             plt.tight_layout()
             st.pyplot(fig)
+        else:
+            st.info("No numeric severity columns found for this model.")
+    else:
+        st.info("No severity breakdown data found for this model.")
 
     left, right = st.columns(2)
 
@@ -380,20 +432,30 @@ with tab2:
         st.dataframe(filtered_issue_counts_df, use_container_width=True, height=220)
 
 
-# ---------------------------
 # TAB 3: ISSUE DETAILS
-# ---------------------------
 with tab3:
     st.subheader(f"Detailed SonarQube Issues for {selected_model}")
 
     if filtered_sonar_df.empty:
         st.info("No issue records found for this model.")
     else:
-        useful_cols = [col for col in ["severity", "message", "file", "line", "rule"] if col in filtered_sonar_df.columns]
+        useful_cols = [
+            col for col in ["severity", "message", "file", "line", "rule"]
+            if col in filtered_sonar_df.columns
+        ]
+
         if useful_cols:
-            st.dataframe(filtered_sonar_df[useful_cols], use_container_width=True, height=350)
+            st.dataframe(
+                filtered_sonar_df[useful_cols],
+                use_container_width=True,
+                height=350
+            )
         else:
-            st.dataframe(filtered_sonar_df, use_container_width=True, height=350)
+            st.dataframe(
+                filtered_sonar_df,
+                use_container_width=True,
+                height=350
+            )
 
     if not filtered_issue_type_df.empty and "issue_name" in filtered_issue_type_df.columns:
         st.subheader("Top Issue Types Across Selected Models")
@@ -414,4 +476,8 @@ with tab3:
             plt.tight_layout()
             st.pyplot(fig)
 
-            st.dataframe(plot_df.drop(columns=["total"]), use_container_width=True, height=250)
+            st.dataframe(
+                plot_df.drop(columns=["total"]),
+                use_container_width=True,
+                height=250
+            )

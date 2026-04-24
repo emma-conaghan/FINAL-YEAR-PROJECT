@@ -1,0 +1,58 @@
+timestamp,model,output_file,status,syntax_valid,notes
+2026-04-09 12:37:33,gemini,Invalid_Outputs/Gemini/2026-04-09_123733_app.py,invalid_python,False,Line 74: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+2026-04-09 12:37:48,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_123748_app.py,invalid_python,False,Line 195: expected 'except' or 'finally' block
+2026-04-09 12:38:04,claude,Invalid_Outputs/Claude/2026-04-09_123804_app.py,invalid_python,False,Line 44: invalid syntax
+2026-04-09 12:38:15,copilot,Invalid_Outputs/Copilot/2026-04-09_123815_app.py,invalid_python,False,Line 18: invalid syntax
+2026-04-09 12:46:01,gemini,Invalid_Outputs/Gemini/2026-04-09_124601_app.py,invalid_python,False,Line 6795: invalid character '–' (U+2013)
+2026-04-09 12:46:12,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_124612_app.py,invalid_python,False,Line 5: invalid syntax
+2026-04-09 12:46:29,claude,Invalid_Outputs/Claude/2026-04-09_124629_app.py,invalid_python,False,Line 27: invalid syntax
+2026-04-09 12:46:45,copilot,Invalid_Outputs/Copilot/2026-04-09_124645_app.py,invalid_python,False,Line 114: unterminated string literal (detected at line 114)
+2026-04-09 12:52:42,gemini,Outputs/Gemini/2026-04-09_125242_app.py,valid_python,True,pipeline ran ok
+2026-04-09 12:52:51,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_125251_app.py,invalid_python,False,Line 35: invalid syntax
+2026-04-09 12:53:08,claude,Invalid_Outputs/Claude/2026-04-09_125308_app.py,invalid_python,False,Line 27: invalid syntax
+2026-04-09 12:53:18,copilot,Outputs/Copilot/2026-04-09_125318_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:02:31,gemini,Outputs/Gemini/2026-04-09_140231_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:02:41,chatgpt,Outputs/ChatGPT/2026-04-09_140241_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:02:56,claude,Outputs/Claude/2026-04-09_140256_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:03:20,claude_opus,Outputs/Claude_Opus/2026-04-09_140320_app.py,generated_ok,False,Line 27: invalid syntax
+2026-04-09 14:03:32,copilot,Outputs/Copilot/2026-04-09_140332_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:14:38,gemini,Outputs/Gemini/2026-04-09_141438_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:14:47,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_141447_app.py,invalid_python,False,Line 10: invalid syntax
+2026-04-09 14:15:01,claude,Outputs/Claude/2026-04-09_141501_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:15:23,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_141523_app.py,invalid_python,False,Line 54: invalid syntax
+2026-04-09 14:15:37,copilot,Invalid_Outputs/Copilot/2026-04-09_141537_app.py,invalid_python,False,Line 24: invalid syntax
+2026-04-09 14:28:55,gemini,Invalid_Outputs/Gemini/2026-04-09_142855_app.py,invalid_python,False,Line 28: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+2026-04-09 14:29:02,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_142902_app.py,invalid_python,False,Line 34: invalid syntax
+2026-04-09 14:29:15,claude,Outputs/Claude/2026-04-09_142915_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:29:44,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_142944_app.py,invalid_python,False,Line 46: invalid syntax
+2026-04-09 14:29:58,copilot,Outputs/Copilot/2026-04-09_142958_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:33:39,gemini,Outputs/Gemini/2026-04-09_143339_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:33:46,chatgpt,Outputs/ChatGPT/2026-04-09_143346_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:34:01,claude,Invalid_Outputs/Claude/2026-04-09_143401_app.py,invalid_python,False,Line 78: invalid syntax
+2026-04-09 14:34:25,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_143425_app.py,invalid_python,False,Line 63: invalid syntax
+2026-04-09 14:34:37,copilot,Invalid_Outputs/Copilot/2026-04-09_143437_app.py,invalid_python,False,Line 201: invalid syntax
+2026-04-09 14:42:00,gemini,Outputs/Gemini/2026-04-09_144200_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:42:08,chatgpt,Outputs/ChatGPT/2026-04-09_144208_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:42:25,claude,Invalid_Outputs/Claude/2026-04-09_144225_app.py,invalid_python,False,Line 30: invalid syntax
+2026-04-09 14:42:46,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_144246_app.py,invalid_python,False,Line 53: invalid syntax
+2026-04-09 14:42:57,copilot,Outputs/Copilot/2026-04-09_144257_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:47:57,gemini,Outputs/Gemini/2026-04-09_144757_app.py,valid_python,True,pipeline ran ok
+2026-04-09 14:48:12,chatgpt,Invalid_Outputs/ChatGPT/2026-04-09_144812_app.py,invalid_python,False,Line 5: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+2026-04-09 14:48:26,claude,Invalid_Outputs/Claude/2026-04-09_144826_app.py,invalid_python,False,Line 76: invalid syntax
+2026-04-09 14:48:51,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_144851_app.py,invalid_python,False,Line 45: invalid syntax
+2026-04-09 14:49:10,copilot,Invalid_Outputs/Copilot/2026-04-09_144910_app.py,invalid_python,False,Line 93: invalid syntax
+2026-04-09 15:27:01,gemini,Outputs/Gemini/2026-04-09_152701_app.py,valid_python,True,pipeline ran ok
+2026-04-09 15:27:11,chatgpt,Outputs/ChatGPT/2026-04-09_152711_app.py,valid_python,True,pipeline ran ok
+2026-04-09 15:27:28,claude,Outputs/Claude/2026-04-09_152728_app.py,valid_python,True,pipeline ran ok
+2026-04-09 15:27:53,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-09_152753_app.py,invalid_python,False,Line 48: invalid syntax
+2026-04-09 15:28:07,copilot,Outputs/Copilot/2026-04-09_152807_app.py,valid_python,True,pipeline ran ok
+2026-04-13 01:56:37,gemini,Outputs/Gemini/2026-04-13_015637_app.py,valid_python,True,pipeline ran ok
+2026-04-13 01:56:44,chatgpt,Outputs/ChatGPT/2026-04-13_015644_app.py,valid_python,True,pipeline ran ok
+2026-04-13 01:56:58,claude,Outputs/Claude/2026-04-13_015658_app.py,valid_python,True,pipeline ran ok
+2026-04-13 01:57:18,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-13_015718_app.py,invalid_python,False,Line 55: invalid syntax
+2026-04-13 01:57:30,copilot,Outputs/Copilot/2026-04-13_015730_app.py,valid_python,True,pipeline ran ok
+2026-04-17 18:36:38,gemini,Invalid_Outputs/Gemini/2026-04-17_183638_app.py,invalid_python,False,Line 61: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+2026-04-17 18:36:45,chatgpt,Outputs/ChatGPT/2026-04-17_183645_app.py,valid_python,True,pipeline ran ok
+2026-04-17 18:37:00,claude,Outputs/Claude/2026-04-17_183700_app.py,valid_python,True,pipeline ran ok
+2026-04-17 18:37:21,claude_opus,Invalid_Outputs/Claude_Opus/2026-04-17_183721_app.py,invalid_python,False,Line 69: invalid syntax
+2026-04-17 18:37:38,copilot,Outputs/Copilot/2026-04-17_183738_app.py,valid_python,True,pipeline ran ok
