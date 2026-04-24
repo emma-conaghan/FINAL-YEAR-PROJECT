@@ -1,0 +1,292 @@
+import sqlite3
+import os
+from flask import Flask, request, redirect, url_for, session, render_template_string
+
+app = Flask(__name__)
+app.secret_key = 'supersecretkey123'
+
+DATABASE = 'portal.db'
+
+def get_db():
+    conn = sqlite3.connect(DATABASE)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+def init_db():
+    conn = get_db()
+    conn.execute('''CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT UNIQUE NOT NULL,
+        password TEXT NOT NULL,
+        is_admin INTEGER DEFAULT 0
+    )''')
+    # Create default admin user
+    try:
+        conn.execute("INSERT INTO users (username, password, is_admin) VALUES (?, ?, ?)",
+                     ('admin', 'admin123', 1))
+        conn.commit()
+    except sqlite3.IntegrityError:
+        pass
+    conn.close()
+
+BASE_TEMPLATE = '''
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Portal - {{ title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f2f5; }
+        .navbar { background: #2c3e50; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .navbar a { color: white; text-decoration: none; margin-left: 15px; }
+        .navbar a:hover { text-decoration: underline; }
+        .container { max-width: 600px; margin: 50px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 8px 0 16px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button, .btn { background: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; }
+        button:hover, .btn:hover { background: #2980b9; }
+        .btn-danger { background: #e74c3c; }
+        .btn-danger:hover { background: #c0392b; }
+        .error { color: #e74c3c; background: #fde8e8; padding: 10px; border-radius: 4px; margin-bottom: 15px; }
+        .success { color: #27ae60; background: #e8fde8; padding: 10px; border-radius: 4px; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #2c3e50; color: white; }
+        tr:hover { background: #f5f5f5; }
+        .nav-links { display: flex; align-items: center; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span><strong>Company Portal</strong></span>
+        <div class="nav-links">
+            {% if session.get('username') %}
+                <span>Welcome, {{ session['username'] }}</span>
+                <a href="/welcome">Home</a>
+                {% if session.get('is_admin') %}
+                    <a href="/admin">Admin</a>
+                {% endif %}
+                <a href="/logout">Logout</a>
+            {% else %}
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
+</html>
+'''
+
+@app.route('/')
+def index():
+    if session.get('username'):
+        return redirect(url_for('welcome'))
+    return redirect(url_for('login'))
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    error = None
+    success = None
+    if request.method == 'POST':
+        username = request.form.get('username', '').strip()
+        password = request.form.get('password', '').strip()
+        confirm_password = request.form.get('confirm_password', '').strip()
+
+        if not username or not password:
+            error = 'Username and password are required.'
+        elif len(username) < 3:
+            error = 'Username must be at least 3 characters.'
+        elif len(password) < 4:
+            error = 'Password must be at least 4 characters.'
+        elif password != confirm_password:
+            error = 'Passwords do not match.'
+        else:
+            conn = get_db()
+            try:
+                conn.execute("INSERT INTO users (username, password) VALUES (?, ?)",
+                             (username, password))
+                conn.commit()
+                success = 'Registration successful! You can now log in.'
+            except sqlite3.IntegrityError:
+                error = 'Username already exists.'
+            finally:
+                conn.close()
+
+    content = '''
+        <h2>Register</h2>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        {% if success %}
+            <div class="success">{{ success }}</div>
+            <p><a href="/login" class="btn">Go to Login</a></p>
+        {% else %}
+            <form method="POST">
+                <label>Username:</label>
+                <input type="text" name="username" required>
+                <label>Password:</label>
+                <input type="password" name="password" required>
+                <label>Confirm Password:</label>
+                <input type="password" name="confirm_password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        {% endif %}
+    '''
+
+    full_template = BASE_TEMPLATE.replace('{{ content }}', content)
+    return render_template_string(full_template, title='Register', error=error, success=success, session=session)
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        username = request.form.get('username', '').strip()
+        password = request.form.get('password', '').strip()
+
+        conn = get_db()
+        user = conn.execute("SELECT * FROM users WHERE username = ? AND password = ?",
+                            (username, password)).fetchone()
+        conn.close()
+
+        if user:
+            session['username'] = user['username']
+            session['user_id'] = user['id']
+            session['is_admin'] = bool(user['is_admin'])
+            return redirect(url_for('welcome'))
+        else:
+            error = 'Invalid username or password.'
+
+    content = '''
+        <h2>Login</h2>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <form method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" required>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+    '''
+
+    full_template = BASE_TEMPLATE.replace('{{ content }}', content)
+    return render_template_string(full_template, title='Login', error=error, session=session)
+
+@app.route('/welcome')
+def welcome():
+    if not session.get('username'):
+        return redirect(url_for('login'))
+
+    content = '''
+        <h2>Welcome to the Company Portal</h2>
+        <p>Hello, <strong>{{ session['username'] }}</strong>! You are successfully logged in.</p>
+        <hr>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="/profile">My Profile</a></li>
+            {% if session.get('is_admin') %}
+                <li><a href="/admin">Admin Panel - View All Users</a></li>
+            {% endif %}
+        </ul>
+    '''
+
+    full_template = BASE_TEMPLATE.replace('{{ content }}', content)
+    return render_template_string(full_template, title='Welcome', session=session)
+
+@app.route('/profile')
+def profile():
+    if not session.get('username'):
+        return redirect(url_for('login'))
+
+    conn = get_db()
+    user = conn.execute("SELECT * FROM users WHERE id = ?", (session['user_id'],)).fetchone()
+    conn.close()
+
+    content = '''
+        <h2>My Profile</h2>
+        <p><strong>Username:</strong> {{ user['username'] }}</p>
+        <p><strong>User ID:</strong> {{ user['id'] }}</p>
+        <p><strong>Role:</strong> {{ 'Administrator' if user['is_admin'] else 'Regular User' }}</p>
+        <br>
+        <a href="/welcome" class="btn">Back to Home</a>
+    '''
+
+    full_template = BASE_TEMPLATE.replace('{{ content }}', content)
+    return render_template_string(full_template, title='Profile', session=session, user=user)
+
+@app.route('/admin')
+def admin():
+    if not session.get('username'):
+        return redirect(url_for('login'))
+    if not session.get('is_admin'):
+        content = '''
+            <h2>Access Denied</h2>
+            <div class="error">You do not have permission to access this page.</div>
+            <a href="/welcome" class="btn">Back to Home</a>
+        '''
+        full_template = BASE_TEMPLATE.replace('{{ content }}', content)
+        return render_template_string(full_template, title='Access Denied', session=session)
+
+    conn = get_db()
+    users = conn.execute("SELECT id, username, is_admin FROM users ORDER BY id").fetchall()
+    conn.close()
+
+    content = '''
+        <h2>Admin Panel - All Registered Users</h2>
+        <p>Total users: <strong>{{ users|length }}</strong></p>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{ user['id'] }}</td>
+                <td>{{ user['username'] }}</td>
+                <td>{{ 'Admin' if user['is_admin'] else 'User' }}</td>
+                <td>
+                    {% if not user['is_admin'] %}
+                        <a href="/admin/delete/{{ user['id'] }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a>
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <a href="/welcome" class="btn">Back to Home</a>
+    '''
+
+    full_template = BASE_TEMPLATE.replace('{{ content }}', content)
+    return render_template_string(full_template, title='Admin Panel', session=session, users=users)
+
+@app.route('/admin/delete/<int:user_id>')
+def admin_delete_user(user_id):
+    if not session.get('username') or not session.get('is_admin'):
+        return redirect(url_for('login'))
+
+    conn = get_db()
+    user = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
+    if user and not user['is_admin']:
+        conn.execute("DELETE FROM users WHERE id = ?", (user_id,))
+        conn.commit()
+    conn.close()
+
+    return redirect(url_for('admin'))
+
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('login'))
+
+if __name__ == '__main__':
+    init_db()
+    app.run(debug=True, host='0.0.0.0', port=5000)

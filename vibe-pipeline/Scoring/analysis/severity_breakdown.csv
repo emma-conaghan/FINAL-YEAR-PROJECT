@@ -1,6 +1,6 @@
 model,CRITICAL,MAJOR,MINOR
-chatgpt,1,10,0
-claude,40,9,2
-claude_opus,38,4,3
+chatgpt,6,20,0
+claude,83,16,3
+claude_opus,69,9,16
 copilot,11,3,0
-gemini,10,11,2
+gemini,17,18,2

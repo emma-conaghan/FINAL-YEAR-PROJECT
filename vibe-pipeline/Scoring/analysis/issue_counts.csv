@@ -1,6 +1,6 @@
 model,issue_count
-chatgpt,11
-claude,51
-claude_opus,45
+chatgpt,26
+claude,102
+claude_opus,94
 copilot,14
-gemini,23
+gemini,37
